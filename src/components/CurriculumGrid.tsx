@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { Course as CourseType } from '../types';
 import Course from './Course';
 import { courses } from '../data/courses';
 import { toRoman } from '../utils/romanNumerals';
@@ -62,9 +61,9 @@ const CurriculumGrid: React.FC = () => {
   const semesters = Array.from({ length: TOTAL_SEMESTERS }, (_, i) => i + 1);
 
   return (
-    <div className="p-6 min-h-screen bg-gray-50">
+    <div className="p-2 min-h-screen bg-gray-50">
       <h1 className="text-2xl font-bold text-center mb-6">Malla Ingeniería Civil en Computación</h1>
-      <div className="flex gap-4 overflow-x-auto pb-6">
+      <div className="flex gap-4 overflow-x-scroll pb-6">
         {semesters.map((semester) => (
           <div key={semester} className="flex-none">
             <div className={`

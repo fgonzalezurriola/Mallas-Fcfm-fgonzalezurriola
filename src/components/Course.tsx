@@ -57,10 +57,10 @@ const Course: React.FC<CourseProps> = ({
     >
       <div>
         <h3 className="font-medium text-sm leading-tight mb-1">{name}</h3>
-        <div className="text-xs opacity-75">{id}</div>
+        {!id.includes('_') && <div className="text-xs opacity-75">{id}</div>}
       </div>
       <div className="text-xs flex justify-between items-center">
-        <span>{credits} créditos</span>
+        {!(credits === 0) && <span>{credits} créditos</span>}
       </div>
     </div>
   );

@@ -80,6 +80,13 @@ export const courses: Course[] = [
     prerequisites: [],
     semester: 2
   },
+  {
+    id: '_EH1',
+    name: 'Formación Integral DR/EH/FG/EI/FT',
+    credits: 3,
+    prerequisites: [],
+    semester: 2
+  },
   // Semestre III
   {
     id: 'MA2001',
@@ -90,7 +97,7 @@ export const courses: Course[] = [
   },
   {
     id: 'MA2601',
-    name: 'Ecuaciones Diferenciales',
+    name: 'Ecuaciones Diferenciales Ordinarias',
     credits: 6,
     prerequisites: ['MA1002', 'MA1102'],
     semester: 3
@@ -135,7 +142,7 @@ export const courses: Course[] = [
     id: 'FI2002',
     name: 'Electromagnetismo',
     credits: 6,
-    prerequisites: ['FI2001', 'MA2001', 'MA2601'],
+    prerequisites: ['MA2001', 'MA2601','FI2001'],
     semester: 4
   },
   {
@@ -148,12 +155,12 @@ export const courses: Course[] = [
   {
     id: 'CD2201',
     name: 'Módulo Interdisplicinario',
-    credits: 6,
     prerequisites: ['CD1201'],
+    credits: 3,
     semester: 4
   },
   {
-    id: '',
+    id: '_EH2',
     name: 'Formación Integral DR/EH/FG/EI/FT',
     credits: 3,
     prerequisites: [],
@@ -189,6 +196,20 @@ export const courses: Course[] = [
     semester: 5
   },
   {
+    id: '_EH3',
+    name: 'Formación Integral DR/EH/FG/EI/FT',
+    credits: 3,
+    prerequisites: [],
+    semester: 5
+  },
+  {
+    id: '_EH4',
+    name: 'Formación Integral DR/EH/FG/EI/FT',
+    credits: 3,
+    prerequisites: [],
+    semester: 5
+  },
+  {
     id: 'CC3201',
     name: 'Bases de Datos',
     credits: 6,
@@ -217,7 +238,7 @@ export const courses: Course[] = [
     semester: 6
   },
   {
-    id: '--',
+    id: '_Electivo1',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
@@ -234,7 +255,7 @@ export const courses: Course[] = [
     id: 'CC4401',
     name: 'Ingeniería de Software',
     credits: 6,
-    prerequisites: ['CC3001'],
+    prerequisites: ['CC3002','CC3201'],
     semester: 7
   },
   {
@@ -252,7 +273,7 @@ export const courses: Course[] = [
     semester: 7
   },
   {
-    id: '--',
+    id: '_Electivo2',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
@@ -261,7 +282,7 @@ export const courses: Course[] = [
   {
     id: 'CC4901',
     name: 'Práctica Profesional I',
-    credits: 6,
+    credits: 7,
     prerequisites: ['CC3002','CC3201','CC3301'],
     semester: 7
   },
@@ -287,14 +308,14 @@ export const courses: Course[] = [
     semester: 8
   },
   {
-    id: 'Electivo',
+    id: '_Electivo3',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
     semester: 8
   },
   {
-    id: '--',
+    id: '_Electivo4',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
@@ -303,40 +324,40 @@ export const courses: Course[] = [
   {
     id: 'EI1090',
     name: 'Examen de Suficiencia en Inglés I',
-    credits: 6,
+    credits: 0,
     prerequisites: [],
     semester: 8
   },
   {
-    id: '---',
+    id: '_Electivo_E1',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 9
   },
   {
-    id: '---',
+    id: '_Electivo_E2',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 9
   },
   {
-    id: '---',
+    id: '_Electivo_E3',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 9
   },
   {
-    id: '----',
+    id: '_Nucleo',
     name: 'Núcleo Gestión para Ingenieros',
     credits: 6,
     prerequisites: [],
     semester: 9
   },
   {
-    id: '-',
+    id: '(Dos cursos)',
     name: 'Formación Integral de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -357,14 +378,14 @@ export const courses: Course[] = [
     semester: 10
   },
   {
-    id: '---',
+    id: '_Electivo_E4',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 10
   },
   {
-    id: '---',
+    id: '_Electivo_E5',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -378,14 +399,14 @@ export const courses: Course[] = [
     semester: 10
   },
   {
-    id: 'CC5402',
+    id: 'CC6919',
     name: 'Trabajo de Título',
     credits: 24,
     prerequisites: ['CC6907'],
     semester: 11
   },
   {
-    id: '---',
+    id: '_Electivo_E6',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
