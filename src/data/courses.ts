@@ -8,7 +8,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200',
+    color: 'bg-common',
   },
   {
     id: 'MA1101',
@@ -16,7 +16,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI1000',
@@ -24,7 +24,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC1000',
@@ -32,7 +32,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CD1100',
@@ -40,7 +40,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'BT1211',
@@ -48,7 +48,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 1,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   // Semestre II
   {
@@ -57,7 +57,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA1001'],
     semester: 2,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'MA1102',
@@ -65,7 +65,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA1101'],
     semester: 2,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI1100',
@@ -73,7 +73,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['FI1000', 'MA1101', 'MA1001'],
     semester: 2,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC1002',
@@ -81,7 +81,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 2,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CD1201',
@@ -89,7 +89,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 2,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_EH1',
@@ -106,7 +106,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA1002', 'MA1102'],
     semester: 3,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'MA2601',
@@ -114,7 +114,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA1002', 'MA1102'],
     semester: 3,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI2001',
@@ -122,7 +122,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['FI1100', 'MA1102', 'MA1002'],
     semester: 3,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI2003',
@@ -130,7 +130,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['FI1100', 'MA1002'],
     semester: 3,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'IQ2211',
@@ -138,7 +138,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 3,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   // Semestre IV
   {
@@ -147,7 +147,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA2001', 'MA2601'],
     semester: 4,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'IN2201',
@@ -155,7 +155,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA2001'],
     semester: 4,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI2002',
@@ -163,7 +163,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA2001', 'MA2601','FI2001'],
     semester: 4,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'FI2004/IQ2212',
@@ -171,7 +171,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['IQ2211', 'FI2001', 'MA2001'],
     semester: 4,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CD2201',
@@ -179,7 +179,7 @@ export const courses: Course[] = [
     prerequisites: ['CD1201'],
     credits: 3,
     semester: 4,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_EH2',
@@ -196,7 +196,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA2001'],
     semester: 5,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3501',
@@ -204,7 +204,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA2001', 'MA2601', 'CC1002', 'FI2001'],
     semester: 5,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3001',
@@ -212,7 +212,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC1002'],
     semester: 5,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3101',
@@ -220,7 +220,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA1101', 'CC1002'],
     semester: 5,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_EH3',
@@ -245,7 +245,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3001'],
     semester: 6,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3002',
@@ -253,7 +253,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3001'],
     semester: 6,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3102',
@@ -261,7 +261,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3101'],
     semester: 6,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC3301',
@@ -269,7 +269,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3001'],
     semester: 6,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_Electivo1',
@@ -277,7 +277,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 6,
-    color: 'bg-lime-100'
+    color: 'bg-elective'
   },
   // Semestre VII
   {
@@ -286,7 +286,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3001'],
     semester: 7,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC4401',
@@ -294,7 +294,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3002','CC3201'],
     semester: 7,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC4102',
@@ -302,7 +302,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['MA3403', 'CC3001','CC3102'],
     semester: 7,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC4302',
@@ -310,7 +310,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3301'],
     semester: 7,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_Electivo2',
@@ -318,7 +318,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 7,
-    color: 'bg-lime-100'
+    color: 'bg-elective'
 
   },
   {
@@ -327,7 +327,7 @@ export const courses: Course[] = [
     credits: 7,
     prerequisites: ['CC3002','CC3201','CC3301'],
     semester: 7,
-    color: 'bg-yellow-200'
+    color: 'bg-internship'
   },
   // Semestre VIII
   {
@@ -336,7 +336,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC4401','IN2201','CD2201'],
     semester: 8,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC4101',
@@ -344,7 +344,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC3102'],
     semester: 8,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: 'CC4303',
@@ -352,7 +352,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC4302'],
     semester: 8,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '_Electivo3',
@@ -360,7 +360,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 8,
-    color: 'bg-lime-100'
+    color: 'bg-elective'
   },
   {
     id: '_Electivo4',
@@ -368,7 +368,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 8,
-    color: 'bg-lime-100'
+    color: 'bg-elective'
   },
   {
     id: 'EI1090',
@@ -376,7 +376,7 @@ export const courses: Course[] = [
     credits: 0,
     prerequisites: [],
     semester: 8,
-    color: 'bg-teal-500'
+    color: 'bg-english'
   },
   // Semestre IX
   {
@@ -385,7 +385,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: '_Electivo_E2',
@@ -393,7 +393,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: '_Electivo_E3',
@@ -401,7 +401,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: '_Nucleo',
@@ -409,7 +409,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   {
     id: '(Dos cursos)',
@@ -425,7 +425,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC4901','CC4401','CC4101'],
     semester: 9,
-    color: 'bg-yellow-200'
+    color: 'bg-internship'
   },
   // Semestre XI
   {
@@ -434,7 +434,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: ['CC4402'],
     semester: 10,
-    color: 'bg-fuchsia-400'
+    color: 'bg-thesis'
   },
   {
     id: '_Electivo_E4',
@@ -442,7 +442,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 10,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: '_Electivo_E5',
@@ -450,7 +450,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 10,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: 'CC5402',
@@ -458,7 +458,7 @@ export const courses: Course[] = [
     credits: 12,
     prerequisites: ['CC5205','CC4402'],
     semester: 10,
-    color: 'bg-sky-200'
+    color: 'bg-common'
   },
   // Semestre XI
   {
@@ -467,7 +467,7 @@ export const courses: Course[] = [
     credits: 24,
     prerequisites: ['CC6907'],
     semester: 11,
-    color: 'bg-fuchsia-400'
+    color: 'bg-thesis'
   },
   {
     id: '_Electivo_E6',
@@ -475,7 +475,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 11,
-    color: 'bg-lime-400'
+    color: 'bg-speciality_elective'
   },
   {
     id: 'EI2090',
@@ -483,6 +483,6 @@ export const courses: Course[] = [
     credits: 0,
     prerequisites: [],
     semester: 11,
-    color: 'bg-teal-500'
+    color: 'bg-english'
   },
 ];
