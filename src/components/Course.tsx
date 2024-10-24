@@ -4,6 +4,7 @@ interface CourseProps {
   id: string;
   name: string;
   credits: number;
+  color: string;
   isPrerequisite: boolean;
   isSelected: boolean;
   isBlack: boolean;
@@ -18,6 +19,7 @@ const Course: React.FC<CourseProps> = ({
   id,
   name,
   credits,
+  color,
   isPrerequisite,
   isSelected,
   isBlack,
@@ -32,7 +34,7 @@ const Course: React.FC<CourseProps> = ({
     if (isSelected) return 'bg-blue-600 text-white';
     if (isHovered) return 'bg-blue-100';
     if (isPrerequisite) return 'bg-yellow-100';
-    return 'bg-white';
+    return color;
   };
 
   const handleContextMenu = (e: React.MouseEvent) => {

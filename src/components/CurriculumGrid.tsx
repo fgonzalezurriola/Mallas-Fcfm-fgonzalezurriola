@@ -84,6 +84,7 @@ const CurriculumGrid: React.FC = () => {
                     isSelected={selectedCourseIds.has(course.id)}
                     isBlack={blackCourseIds.has(course.id)}
                     isHovered={hoveredCourseId === course.id}
+                    color={course.color}
                     onMouseEnter={setHoveredCourseId}
                     onMouseLeave={() => setHoveredCourseId(null)}
                     onClick={handleCourseClick}

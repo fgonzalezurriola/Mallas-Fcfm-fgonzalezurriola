@@ -2,6 +2,7 @@ export interface Course {
   id: string;
   name: string;
   credits: number;
+  color: string;
   prerequisites: string[];
   semester: number;
 }
