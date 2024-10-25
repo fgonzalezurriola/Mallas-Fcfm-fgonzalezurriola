@@ -15,6 +15,7 @@ interface CourseProps {
   onRightClick: (id: string) => void;
 }
 
+
 const Course: React.FC<CourseProps> = ({
   id,
   name,
@@ -30,10 +31,10 @@ const Course: React.FC<CourseProps> = ({
   onRightClick,
 }) => {
   const getBackgroundColor = () => {
+    if (isPrerequisite) return 'bg-amber-300';
     if (isBlack) return 'bg-black text-white';
     if (isSelected) return 'bg-blue-600 text-white';
-    if (isHovered) return 'bg-blue-100';
-    if (isPrerequisite) return 'bg-yellow-100';
+    if (isHovered) return 'bg-blue-300 ';
     return color;
   };
 
@@ -51,6 +52,7 @@ const Course: React.FC<CourseProps> = ({
         cursor-pointer h-[90px] w-[180px]
         flex flex-col justify-between
         hover:border-blue-400
+        hover:shadow-lg ${isPrerequisite ? 'hover:shadow-yellow-600' : 'hover:shadow-blue-300'}
       `}
       onMouseEnter={() => onMouseEnter(id)}
       onMouseLeave={onMouseLeave}
