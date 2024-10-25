@@ -57,4 +57,4 @@ Actualmente el proyecto está desplegado en Vercel, puedes acceder a la [malla c
 
 ---
 
-¡Gracias por revisar este proyecto! Tu colaboración es bienvenida para mejorar la herramienta y apoyar a más estudiantes en su planificación académica.
+¡Gracias por revisar este proyecto! Tu colaboración es bienvenida para mejorar la herramienta.
