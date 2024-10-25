@@ -12,3 +12,11 @@ export interface CourseState {
   blackCourseIds: Set<string>;
   hoveredCourseId: string | null;
 }
+
+export interface Mallas {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl: string;
+  route: string;
+}

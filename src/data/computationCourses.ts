@@ -1,6 +1,6 @@
 import { Course } from '../types';
 
-export const courses: Course[] = [
+export const computationCourses: Course[] = [
   // Semestre I
   {
     id: 'MA1001',
@@ -97,7 +97,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 2,
-    color: 'bg-red-300'
+    color: 'bg-holistic'
   },
   // Semestre III
   {
@@ -187,7 +187,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 4,
-    color: 'bg-red-300'
+    color: 'bg-holistic'
   },
   // Semestre V
   {
@@ -228,7 +228,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 5,
-    color: 'bg-red-300'
+    color: 'bg-holistic'
   },
   {
     id: '_EH4',
@@ -236,7 +236,7 @@ export const courses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 5,
-    color: 'bg-red-300'
+    color: 'bg-holistic'
   },
   // Semestre VI
   {
@@ -417,7 +417,7 @@ export const courses: Course[] = [
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-red-300'
+    color: 'bg-holistic'
   },
   {
     id: 'CC5901',

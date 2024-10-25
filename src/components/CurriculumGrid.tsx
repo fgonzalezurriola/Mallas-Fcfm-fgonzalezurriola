@@ -1,13 +1,24 @@
 import React, { useState, useCallback, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Course from './Course';
-import { courses } from '../data/courses';
+import BackButton from './BackButton';
+import { computationCourses } from '../data/computationCourses.ts';
+import { electricalCourses } from '../data/electricalCourses.ts';
 import { toRoman } from '../utils/romanNumerals';
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const TOTAL_SEMESTERS = 11;
 
 const CurriculumGrid: React.FC = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+  
+  // Determinar qué cursos cargar basado en la ruta
+  const courses = currentPath.includes('computacion') ? computationCourses : electricalCourses;
+  const curriculumName = currentPath.includes('computacion') 
+    ? 'Ingeniería Civil en Computación' 
+    : 'Ingeniería Civil Eléctrica';
+
   const [selectedCourseIds, setSelectedCourseIds] = useState<Set<string>>(new Set());
   const [blackCourseIds, setBlackCourseIds] = useState<Set<string>>(new Set());
   const [hoveredCourseId, setHoveredCourseId] = useState<string | null>(null);
@@ -17,7 +28,7 @@ const CurriculumGrid: React.FC = () => {
   const scrollLeft = () => {
     if (containerRef.current) {
       containerRef.current.scrollBy({
-        left: -400, 
+        left: -400,
         behavior: 'smooth',
       });
     }
@@ -26,7 +37,7 @@ const CurriculumGrid: React.FC = () => {
   const scrollRight = () => {
     if (containerRef.current) {
       containerRef.current.scrollBy({
-        left: 400, 
+        left: 400,
         behavior: 'smooth',
       });
     }
@@ -36,7 +47,7 @@ const CurriculumGrid: React.FC = () => {
     const course = courses.find((c) => c.id === courseId);
     if (!course) return [];
     return course.prerequisites;
-  }, []);
+  }, [courses]);
 
   const isPrerequisite = useCallback(
     (courseId: string): boolean => {
@@ -84,10 +95,10 @@ const CurriculumGrid: React.FC = () => {
 
   return (
     <div className="p-0 min-h-screen bg-gray-50">
-      <h1 className="text-2xl font-bold text-center mb-2">Malla Ingeniería Civil en Computación</h1>
+      <BackButton />
+      <h1 className="text-2xl font-bold text-center mb-2 pt-4">Malla {curriculumName}</h1>
       
       <div className="flex items-center gap-2">
-        {/* Go left   button */}
         <button onClick={scrollLeft} className="p-2 py-32 mx-2 bg-gray-300 rounded-xl hover:bg-gray-400">
           <FaArrowLeft />
         </button>
@@ -129,9 +140,9 @@ const CurriculumGrid: React.FC = () => {
           ))}
         </div>
 
-        {/* Go Right - button */}
         <button onClick={scrollRight} className="p-2 py-32 mx-2 bg-gray-300 rounded-xl hover:bg-gray-400">
-          <FaArrowRight />        </button>
+          <FaArrowRight />
+        </button>
       </div>
     </div>
   );
