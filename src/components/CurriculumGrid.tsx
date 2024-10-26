@@ -193,7 +193,7 @@ const CurriculumGrid: React.FC = () => {
           ))}
         </div>
 
-        <button onClick={scrollRight} className="p-2 py-32 mx-2 bg-gray-300 rounded-xl hover:bg-gray-400">
+        <button onClick={scrollRight} className="right-4 p-2 py-32 mx-2 bg-gray-300 rounded-xl hover:bg-gray-400">
           <FaArrowRight />
         </button>
       </div>

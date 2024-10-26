@@ -422,7 +422,7 @@ export const electricalCourses: Course[] = [
 // Semestre X
 {
   id: 'EL6202',
-  name: 'Taller de Emprendi- miento e Innovación',
+  name: 'Taller de Emprendimiento e Innovación',
   credits: 6,
   prerequisites: ['EL6101'],
   semester: 10,

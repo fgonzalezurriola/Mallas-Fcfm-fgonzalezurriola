@@ -189,4 +189,195 @@ export const mechanicalCourses: Course[] = [
     semester: 4,
     color: 'bg-holistic'
   },
+  // Semestre V
+  {
+    id: 'MA3403',
+    name: 'Probabilidades y Estadística',
+    credits: 6,
+    prerequisites: ['MA2001', 'MA2601'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'MA3701',
+    name: 'Optimización y Modelamiento',
+    credits: 6,
+    prerequisites: ['MA2002'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3110',
+    name: 'Ciencia de los Materiales',
+    credits: 6,
+    prerequisites: ['FI2004Q', 'FI2002'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3140',
+    name: 'Mecánica de Fluidos',
+    credits: 6,
+    prerequisites: ['MA2601', 'FI2004Q'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  // Semestre VI
+  {
+    id: 'ME3510',
+    name: 'Termodinámica',
+    credits: 6,
+    prerequisites: ['FI2004Q'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3120',
+    name: 'Dibujo Mecánico',
+    credits: 6,
+    prerequisites: ['CD2201'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3130',
+    name: 'Mecánica Estática',
+    credits: 6,
+    prerequisites: ['FI2001'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: '_FormacionIntegral1',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
+    prerequisites: [],
+    semester: 6,
+    color: 'bg-holistic'
+  },
+  // Semestre VII
+  {
+    id: 'ME4210',
+    name: 'Gestión de Activos Físicos',
+    credits: 6,
+    prerequisites: ['MA3701', 'ME3130'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3210',
+    name: 'Materiales para la Manufactura',
+    credits: 6,
+    prerequisites: ['ME3110'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4140',
+    name: 'Transferencia de Calor',
+    credits: 6,
+    prerequisites: ['ME3510'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3150',
+    name: 'Mecánica de Sólidos',
+    credits: 6,
+    prerequisites: ['ME3130', 'MA2002'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  // Semestre VIII
+  {
+    id: 'ME4220',
+    name: 'Evaluación de Proyectos en Ingeniería',
+    credits: 6,
+    prerequisites: ['IN2201'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4110',
+    name: 'Procesos de Manufactura',
+    credits: 6,
+    prerequisites: ['ME3210'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4250',
+    name: 'Mecatrónica',
+    credits: 6,
+    prerequisites: ['FI2001', 'ME4110'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: '_Electivo1',
+    name: 'Electivo',
+    credits: 6,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-elective'
+  },
+  // Semestre IX
+  {
+    id: 'ME5210',
+    name: 'Manufactura Avanzada',
+    credits: 6,
+    prerequisites: ['ME4110'],
+    semester: 9,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_Especialización1',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_Especialización2',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-speciality_elective'
+  },
+  // Semestre X
+  {
+    id: 'ME6908',
+    name: 'Introducción al Trabajo de Título',
+    credits: 3,
+    prerequisites: ['ME5210'],
+    semester: 10,
+    color: 'bg-thesis'
+  },
+  {
+    id: '_Especialización3',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  // Semestre XI
+  {
+    id: 'ME6909',
+    name: 'Trabajo de Título',
+    credits: 21,
+    prerequisites: ['ME6908'],
+    semester: 11,
+    color: 'bg-thesis'
+  },
+  {
+    id: '_Electivo_E1',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-speciality_elective'
+  }
 ];

@@ -43,11 +43,18 @@ const Course: React.FC<CourseProps> = ({
     onRightClick(id);
   };
 
+  const largeName = (name: string) => {
+    if (name.length > 36 || name.split(' ').length > 5) {
+      return true;
+    }
+    return false;
+  }
+
   return (
     <div
       className={`
-        ${getBackgroundColor()}
-        p-3 rounded border border-gray-300
+        ${getBackgroundColor()} ${largeName(name) ? 'py-1 pb-1 pl-2 pr-2' : 'p-2'}
+        border border-gray-300
         transition-colors duration-200 ease-in-out
         cursor-pointer h-[90px] w-[180px]
         flex flex-col justify-between
@@ -60,10 +67,10 @@ const Course: React.FC<CourseProps> = ({
       onContextMenu={handleContextMenu}
     >
       <div>
-        <h3 className="font-medium text-sm leading-tight mb-1">{name}</h3>
+        <h3 className="font-medium text-sm leading-tight mb-0">{name}</h3>
         {!id.includes('_') && <div className="text-xs opacity-75">{id}</div>}
       </div>
-      <div className="text-xs flex justify-between items-center">
+      <div className="bottom-0 text-xs flex justify-between items-center mb-0">
         {!(credits === 0) && <span>{credits} créditos</span>}
       </div>
     </div>
