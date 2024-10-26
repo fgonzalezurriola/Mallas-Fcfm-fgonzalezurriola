@@ -194,13 +194,13 @@ export const mechanicalCourses: Course[] = [
     id: 'MA3403',
     name: 'Probabilidades y Estadística',
     credits: 6,
-    prerequisites: ['MA2001', 'MA2601'],
+    prerequisites: ['MA2001'],
     semester: 5,
     color: 'bg-common'
   },
   {
-    id: 'MA3701',
-    name: 'Optimización y Modelamiento',
+    id: 'MA3701/IN3171',
+    name: 'Optimización / Modelamiento y Optimización',
     credits: 6,
     prerequisites: ['MA2002'],
     semester: 5,
@@ -210,7 +210,7 @@ export const mechanicalCourses: Course[] = [
     id: 'ME3110',
     name: 'Ciencia de los Materiales',
     credits: 6,
-    prerequisites: ['FI2004Q', 'FI2002'],
+    prerequisites: ['FI2004/IQ2212'],
     semester: 5,
     color: 'bg-common'
   },
@@ -218,37 +218,69 @@ export const mechanicalCourses: Course[] = [
     id: 'ME3140',
     name: 'Mecánica de Fluidos',
     credits: 6,
-    prerequisites: ['MA2601', 'FI2004Q'],
+    prerequisites: ['MA2002','FI2003','FI2004/IQ2212'],
     semester: 5,
-    color: 'bg-common'
-  },
-  // Semestre VI
-  {
-    id: 'ME3510',
-    name: 'Termodinámica',
-    credits: 6,
-    prerequisites: ['FI2004Q'],
-    semester: 6,
     color: 'bg-common'
   },
   {
     id: 'ME3120',
     name: 'Dibujo Mecánico',
-    credits: 6,
+    credits: 3,
     prerequisites: ['CD2201'],
-    semester: 6,
+    semester: 5,
     color: 'bg-common'
   },
   {
     id: 'ME3130',
     name: 'Mecánica Estática',
-    credits: 6,
+    credits: 3,
     prerequisites: ['FI2001'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  // Semestre VI
+  {
+    id: 'ME3250',
+    name: 'Cinemática y Dinámica de Mecanismos',
+    credits: 6,
+    prerequisites: ['MA2601','FI2001'],
     semester: 6,
     color: 'bg-common'
   },
   {
-    id: '_FormacionIntegral1',
+    id: 'ME3210',
+    name: 'Materiales para la Ingeniería',
+    credits: 6,
+    prerequisites: ['ME3110'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3240',
+    name: 'Termotecnia',
+    credits: 6,
+    prerequisites: ['ME3140'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3230',
+    name: 'Mecánica de Sólidos',
+    credits: 6,
+    prerequisites: ['ME3130','MA2002'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME3220',
+    name: 'Taller Mecánico',
+    credits: 3,
+    prerequisites: [],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: '_EH3',
     name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
@@ -257,44 +289,11 @@ export const mechanicalCourses: Course[] = [
   },
   // Semestre VII
   {
-    id: 'ME4210',
+    id: 'ME4160',
     name: 'Gestión de Activos Físicos',
     credits: 6,
-    prerequisites: ['MA3701', 'ME3130'],
+    prerequisites: ['MA3701/IN3171', 'ME3130'],
     semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: 'ME3210',
-    name: 'Materiales para la Manufactura',
-    credits: 6,
-    prerequisites: ['ME3110'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: 'ME4140',
-    name: 'Transferencia de Calor',
-    credits: 6,
-    prerequisites: ['ME3510'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: 'ME3150',
-    name: 'Mecánica de Sólidos',
-    credits: 6,
-    prerequisites: ['ME3130', 'MA2002'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  // Semestre VIII
-  {
-    id: 'ME4220',
-    name: 'Evaluación de Proyectos en Ingeniería',
-    credits: 6,
-    prerequisites: ['IN2201'],
-    semester: 8,
     color: 'bg-common'
   },
   {
@@ -302,61 +301,190 @@ export const mechanicalCourses: Course[] = [
     name: 'Procesos de Manufactura',
     credits: 6,
     prerequisites: ['ME3210'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4140',
+    name: 'Transferencia de Calor',
+    credits: 6,
+    prerequisites: ['ME3240'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4150',
+    name: 'Automatización y Control',
+    credits: 6,
+    prerequisites: ['ME3250'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4130',
+    name: 'Vibraciones Mecánicas',
+    credits: 6,
+    prerequisites: ['ME3230'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  // Semestre VIII
+  {
+    id: 'ME4262',
+    name: 'Evaluación de Proyectos en Ingeniería',
+    credits: 6,
+    prerequisites: ['IN2201'],
     semester: 8,
     color: 'bg-common'
   },
   {
     id: 'ME4250',
     name: 'Mecatrónica',
-    credits: 6,
+    credits: 3,
     prerequisites: ['FI2001', 'ME4110'],
     semester: 8,
     color: 'bg-common'
   },
   {
-    id: '_Electivo1',
-    name: 'Electivo',
+    id: 'ME4240',
+    name: 'Máquinas',
     credits: 6,
+    prerequisites: ['ME4140'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4230',
+    name: 'Elementos de Máquinas',
+    credits: 6,
+    prerequisites: ['ME3230'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4220',
+    name: 'Planos de Ingeniería',
+    credits: 3,
+    prerequisites: ['ME3220','ME4150'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: '_EH4',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
     prerequisites: [],
     semester: 8,
-    color: 'bg-elective'
+    color: 'bg-holistic'
+  },
+  {
+    id: '_FI1',
+    name: 'Formación Integral de Especialidad',
+    credits: 3,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-holistic'
   },
   // Semestre IX
+  {
+    id: 'IN4273',
+    name: 'Gestión de Operaciones',
+    credits: 6,
+    prerequisites: ['MA3701/IN3171'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME5110',
+    name: 'Proyecto en Materiales y Manufactura',
+    credits: 6,
+    prerequisites: ['ME4262','ME4110'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME5140',
+    name: 'Ingeniería en Termofluidos',
+    credits: 6,
+    prerequisites: ['ME4240','ME4262'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME5150',
+    name: 'Robótica',
+    credits: 6,
+    prerequisites: ['ME4150'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME5120',
+    name: 'Diseño de Sistemas Mecánicos',
+    credits: 6,
+    prerequisites: ['ME4130','ME4220','ME4230'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME4901',
+    name: 'Práctica Profesional I (cumplir UNO de los requisito)',
+    credits: 7,
+    prerequisites: ['ME4110','ME4130','ME4140','ME4150','ME4160'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'EI1090',
+    name: 'Examen de Suficiencia en Inglés I',
+    credits: 0,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-english'
+  },
+  // Semestre X
   {
     id: 'ME5210',
     name: 'Manufactura Avanzada',
     credits: 6,
-    prerequisites: ['ME4110'],
-    semester: 9,
-    color: 'bg-speciality_elective'
+    prerequisites: ['IN4273','ME4110'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME6908',
+    name: 'Introducción al Trabajo de Titulo (CR270)',
+    credits: 3,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-thesis'
+  },
+  {
+    id: 'ME5220',
+    name: 'Proyecto en Ingeniería Mecánica',
+    credits: 6,
+    prerequisites: ['ME5120','ME5140'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: 'ME5240',
+    name: 'Laboratorio de Energía',
+    credits: 3,
+    prerequisites: ['ME4240'],
+    semester: 10,
+    color: 'bg-common'
   },
   {
     id: '_Especialización1',
     name: 'Especialización',
     credits: 6,
     prerequisites: [],
-    semester: 9,
+    semester: 10,
     color: 'bg-speciality_elective'
   },
   {
     id: '_Especialización2',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-speciality_elective'
-  },
-  // Semestre X
-  {
-    id: 'ME6908',
-    name: 'Introducción al Trabajo de Título',
-    credits: 3,
-    prerequisites: ['ME5210'],
-    semester: 10,
-    color: 'bg-thesis'
-  },
-  {
-    id: '_Especialización3',
     name: 'Especialización',
     credits: 6,
     prerequisites: [],
@@ -373,11 +501,35 @@ export const mechanicalCourses: Course[] = [
     color: 'bg-thesis'
   },
   {
-    id: '_Electivo_E1',
-    name: 'Electivo de Especialidad',
+    id: '_Especialización3',
+    name: 'Especialización',
     credits: 6,
     prerequisites: [],
     semester: 11,
     color: 'bg-speciality_elective'
+  },
+  {
+    id: '_FI2',
+    name: 'Formación Integral de Especialidad',
+    credits: 3,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-holistic'
+  },
+  {
+    id: 'ME5902',
+    name: 'Práctica Profesional II',
+    credits: 14,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-internship'
+  },
+  {
+    id: 'EI2090',
+    name: 'Examen de Suficiencia en Inglés II',
+    credits: 0,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-english'
   }
 ];
