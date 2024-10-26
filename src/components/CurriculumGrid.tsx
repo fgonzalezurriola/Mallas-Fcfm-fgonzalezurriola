@@ -4,6 +4,20 @@ import Course from './Course';
 import BackButton from './BackButton';
 import { computationCourses } from '../data/computationCourses.ts';
 import { electricalCourses } from '../data/electricalCourses.ts';
+import { industrialCourses } from '../data/industrialCourses.ts';
+import { mechanicalCourses } from '../data/mechanicalCourses.ts';
+import { physicsCourses } from '../data/physicsCourses.ts';
+import { astronomyCourses } from '../data/astronomyCourses.ts';
+import { chemistryCourses } from '../data/chemistryCourses.ts';
+import { civilmention1Courses } from '../data/civilmention1Courses.ts';
+import { civilmention2Courses } from '../data/civilmention2Courses.ts';
+import { civilmention3Courses } from '../data/civilmention3Courses.ts';
+import { mathematicalCourses } from '../data/mathematicalCourses.ts';
+import { geologyCourses } from '../data/geologyCourses.ts';
+import { geophysicsCourses } from '../data/geophysicsCourses.ts';
+
+
+import { placeholderCourses } from '../data/placeHolderCourses.ts';
 import { toRoman } from '../utils/romanNumerals';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -12,12 +26,51 @@ const TOTAL_SEMESTERS = 11;
 const CurriculumGrid: React.FC = () => {
   const location = useLocation();
   const currentPath = location.pathname;
-  
-  // Determinar qué cursos cargar basado en la ruta
-  const courses = currentPath.includes('computacion') ? computationCourses : electricalCourses;
-  const curriculumName = currentPath.includes('computacion') 
-    ? 'Ingeniería Civil en Computación' 
-    : 'Ingeniería Civil Eléctrica';
+  let curriculumName = '';
+  let courses = placeholderCourses;
+  if (currentPath.includes('computacion')) {
+    courses = computationCourses;
+    curriculumName = 'Ingeniería Civil en Computación'
+  } else if (currentPath.includes('electrica')) {
+    courses = electricalCourses;
+    curriculumName = 'Ingeniería Civil Eléctrica'
+  } else if (currentPath.includes('industrial')) {
+    courses = industrialCourses;
+    curriculumName = 'Ingeniería Civil Industrial'
+  } else if (currentPath.includes('mecanica')) {
+    courses = mechanicalCourses;
+    curriculumName = 'Ingeniería Civil Mecánica'
+  } else if (currentPath.includes('fisica')) {
+    courses = physicsCourses;
+    curriculumName = 'Ingeniería Civil Física'
+  } else if (currentPath.includes('astronomia')) {
+    courses = astronomyCourses;
+    curriculumName = 'Licenciatura en Ciencias Mención Astronomía'
+  } else if (currentPath.includes('quimica')) {
+    courses = chemistryCourses;
+    curriculumName = 'Ingeniería Civil Química'
+  } else if (currentPath.includes('civil1')) {
+    courses = civilmention1Courses;
+    curriculumName = 'Ingeniería Civil1'
+  } else if (currentPath.includes('civil2')) {
+    courses = civilmention2Courses;
+    curriculumName = 'Ingeniería Civil2'
+  } else if (currentPath.includes('civil3')) {
+    courses = civilmention3Courses;
+    curriculumName = 'Ingeniería Civil3'
+  } else if (currentPath.includes('matematica')) {
+    courses = mathematicalCourses;
+    curriculumName = 'Ingeniería Civil en Matemáticas'
+  } else if (currentPath.includes('geologia')) {
+    courses = geologyCourses;
+    curriculumName = 'Geología'
+  } else if (currentPath.includes('geofisica')) {
+    courses = geophysicsCourses;
+    curriculumName = 'Licenciatura en Ciencias Mención Geofísica'
+  } else {
+    courses = placeholderCourses;
+  }
+
 
   const [selectedCourseIds, setSelectedCourseIds] = useState<Set<string>>(new Set());
   const [blackCourseIds, setBlackCourseIds] = useState<Set<string>>(new Set());

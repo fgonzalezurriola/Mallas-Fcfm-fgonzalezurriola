@@ -1,6 +1,6 @@
 import { Course } from '../types';
 
-export const physicsCourses: Course[] = [
+export const chemistryCourses: Course[] = [
   // Semestre I
   {
     id: 'MA1001',
