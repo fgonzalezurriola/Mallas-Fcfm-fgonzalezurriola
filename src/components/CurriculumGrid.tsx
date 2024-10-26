@@ -15,8 +15,7 @@ import { civilmention3Courses } from '../data/civilmention3Courses.ts';
 import { mathematicalCourses } from '../data/mathematicalCourses.ts';
 import { geologyCourses } from '../data/geologyCourses.ts';
 import { geophysicsCourses } from '../data/geophysicsCourses.ts';
-
-
+import { PiMouseLeftClickFill, PiMouseRightClickFill } from "react-icons/pi";
 import { placeholderCourses } from '../data/placeHolderCourses.ts';
 import { toRoman } from '../utils/romanNumerals';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -149,8 +148,18 @@ const CurriculumGrid: React.FC = () => {
   return (
     <div className="p-0 min-h-screen bg-gray-50">
       <BackButton />
-      <h1 className="text-2xl font-bold text-center mb-2 pt-4">Malla {curriculumName}</h1>
-      
+      <div className="relative flex items-center justify-between mb-3.5 pt-3.5">
+        <h1 className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
+          Malla {curriculumName}
+        </h1>
+        <div className="flex items-center gap-4 ml-auto">
+          <PiMouseLeftClickFill />
+          <span className="text-sw">Marca Temporal</span>
+          <PiMouseRightClickFill />
+          <span className="text-sw mr-16">Marca <strong>Completado</strong></span>
+        </div>
+      </div>
+
       <div className="flex items-center gap-2">
         <button onClick={scrollLeft} className="p-2 py-32 mx-2 bg-gray-300 rounded-xl hover:bg-gray-400">
           <FaArrowLeft />

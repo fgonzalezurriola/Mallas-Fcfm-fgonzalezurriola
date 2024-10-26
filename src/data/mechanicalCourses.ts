@@ -432,7 +432,7 @@ export const mechanicalCourses: Course[] = [
     credits: 7,
     prerequisites: ['ME4110','ME4130','ME4140','ME4150','ME4160'],
     semester: 9,
-    color: 'bg-common'
+    color: 'bg-internship'
   },
   {
     id: 'EI1090',
