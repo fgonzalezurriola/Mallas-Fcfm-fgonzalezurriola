@@ -1,6 +1,6 @@
-import { common } from '../types';
+import { Course } from '../types';
 
-export const industrialcommons: common[] = [
+export const industrialCourses: Course[] = [
   // Semestre I
   {
     id: 'MA1001',
@@ -188,8 +188,7 @@ export const industrialcommons: common[] = [
     prerequisites: [],
     semester: 4,
     color: 'bg-holistic'
-  },
-    // Semestre V
+  },  // Semestre V
   {
     id: 'IN3171',
     name: 'Modelamiento y Optimización',
@@ -210,30 +209,45 @@ export const industrialcommons: common[] = [
     id: 'IN3101',
     name: 'Taller de Liderazgo e Innovación Social',
     credits: 6,
-    prerequisites: ['CD2021'],
+    prerequisites: ['MA1102'],
     semester: 5,
     color: 'bg-common'
   },
   {
-    id: '_Electivo_E1',
+    id: '_Electivo1',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
     semester: 5,
     color: 'bg-elective'
   },
-
+  {
+    id: '_EH3',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
+    prerequisites: [],
+    semester: 5,
+    color: 'bg-holistic'
+  },
+  {
+    id: '_EH3',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
+    prerequisites: [],
+    semester: 5,
+    color: 'bg-holistic'
+  },
   // Semestre VI
   {
     id: 'IN3272',
     name: 'Decisiones bajo Incertidumbre',
     credits: 6,
-    prerequisites: ['IN3141', 'IN3171'],
+    prerequisites: ['IN3171', 'IN3141'],
     semester: 6,
     color: 'bg-common'
   },
   {
-    id: 'IN3111',
+    id: 'IN3221',
     name: 'Teoría de Juegos y Estrategia',
     credits: 6,
     prerequisites: ['IN2201', 'IN3141'],
@@ -252,11 +266,18 @@ export const industrialcommons: common[] = [
     id: 'IN3301',
     name: 'Evaluación de Proyectos',
     credits: 6,
-    prerequisites: ['IN2201', 'IN3141'],
+    prerequisites: ['IN2201','IN3141'],
     semester: 6,
     color: 'bg-common'
   },
-
+  {
+    id: '_Electivo2',
+    name: 'Electivo',
+    credits: 6,
+    prerequisites: [],
+    semester: 6,
+    color: 'bg-elective'
+  },
   // Semestre VII
   {
     id: 'IN4102',
@@ -267,7 +288,7 @@ export const industrialcommons: common[] = [
     color: 'bg-common'
   },
   {
-    id: 'IN3423',
+    id: 'IN4123',
     name: 'Macroeconomía',
     credits: 6,
     prerequisites: ['IN2201', 'IN3141'],
@@ -275,7 +296,7 @@ export const industrialcommons: common[] = [
     color: 'bg-common'
   },
   {
-    id: 'IN3143',
+    id: 'IN4143',
     name: 'Análisis de Datos e Inferencia Causal',
     credits: 6,
     prerequisites: ['IN3242'],
@@ -283,14 +304,29 @@ export const industrialcommons: common[] = [
     color: 'bg-common'
   },
   {
-    id: '_Electivo_E2',
+    id: 'IN4151',
+    name: 'Ingeniería de la Información',
+    credits: 6,
+    prerequisites: ['CC1002','IN3171','IN3242'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: '_Electivo3',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
     semester: 7,
     color: 'bg-elective'
   },
-
+  {
+    id: 'IN4191',
+    name: 'Practica Profesional I',
+    credits: 7,
+    prerequisites: ['IN3272','IN4102','IN3301','IN4143','IN4151','FI2002','FI2004/IQ2212'],
+    semester: 6,
+    color: 'bg-internship'
+  },
   // Semestre VIII
   {
     id: 'IN4273',
@@ -301,7 +337,7 @@ export const industrialcommons: common[] = [
     color: 'bg-common'
   },
   {
-    id: 'IN4261',
+    id: 'IN3261',
     name: 'Marketing',
     credits: 6,
     prerequisites: ['IN3171', 'IN3242', 'IN3301'],
@@ -317,114 +353,127 @@ export const industrialcommons: common[] = [
     color: 'bg-common'
   },
   {
-    id: '_Electivo_E3',
+    id: '_Electivo3',
     name: 'Electivo',
     credits: 6,
     prerequisites: [],
     semester: 8,
     color: 'bg-elective'
   },
-
+  {
+    id: '_Electivo4',
+    name: 'Electivo',
+    credits: 6,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-elective'
+  },
+  {
+    id: 'EI1090',
+    name: 'Examen de Suficiencia en Inglés',
+    credits: 0,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-english'
+  },
   // Semestre IX
   {
-    id: '_Especialización_E1',
+    id: '_Especialización1',
     name: 'Especialización',
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-specialization-elective'
+    color: 'bg-speciality_elective_2'
   },
   {
-    id: '_Especialización_E2',
+    id: '_Especialización2',
     name: 'Especialización',
     credits: 6,
     prerequisites: [],
     semester: 9,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E3',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-specialization-elective'
+    color: 'bg-speciality_elective_2'
   },
   {
     id: 'IN5112',
     name: 'Dirección Estratégica',
     credits: 6,
-    prerequisites: ['IN4273', 'IN4261', 'IN4232'],
+    prerequisites: ['IN4273','IN4261','IN4232'],
     semester: 9,
     color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E4',
-    name: 'Electivo de Especialidad',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-speciality_elective'
-  },
-
-  // Semestre X
-  {
-    id: '_Especialización_E4',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E5',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E6',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
   },
   {
     id: 'IN5111',
     name: 'Comportamiento Organizacional',
     credits: 6,
     prerequisites: ['IN4191'],
-    semester: 10,
+    semester: 9,
     color: 'bg-common'
   },
   {
-    id: '_Electivo_E5',
+    id: '_ElectivoEspecialidad1',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-speciality_elective'
+  },
+  // Semestre X
+  {
+    id: '_Especialización3',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective_2'
+  },
+  {
+    id: '_Especialización4',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective_2'
+  },
+  {
+    id: '_ElectivoEspecialidad2',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 10,
     color: 'bg-speciality_elective'
   },
-
+  {
+    id: '_ElectivoEspecialidad3',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_ElectivoEspecialidad4',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
   // Semestre XI
   {
-    id: 'IN6193',
+    id: 'IN6193 CR300',
     name: 'Proyecto de Título',
     credits: 15,
-    prerequisites: ['IN5112', 'IN5111'],
+    prerequisites: ['Autor', 'CR300'],
     semester: 11,
     color: 'bg-thesis'
   },
   {
     id: 'IN6192',
-    name: 'Práctica Profesional Extendida',
+    name: 'Practica Profesional Extendida',
     credits: 15,
-    prerequisites: ['IN4191', 'IN5112', 'IN5111'],
+    prerequisites: ['IN4191','IN5112','IN5111'],
     semester: 11,
-    color: 'bg-internship'
+    color: 'bg-thesis'
   },
   {
     id: 'EI2090',
@@ -432,496 +481,6 @@ export const industrialcommons: common[] = [
     credits: 0,
     prerequisites: [],
     semester: 11,
-    color: 'bg-english'
-  },
-  // Semestre V
-  {
-    id: 'IN3171',
-    name: 'Modelamiento y Optimización',
-    credits: 6,
-    prerequisites: ['MA2002'],
-    semester: 5,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3141',
-    name: 'Probabilidades',
-    credits: 6,
-    prerequisites: ['MA2001'],
-    semester: 5,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3101',
-    name: 'Taller de Liderazgo e Innovación Social',
-    credits: 6,
-    prerequisites: ['CD2021'],
-    semester: 5,
-    color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E1',
-    name: 'Electivo',
-    credits: 6,
-    prerequisites: [],
-    semester: 5,
-    color: 'bg-elective'
-  },
-
-  // Semestre VI
-  {
-    id: 'IN3272',
-    name: 'Decisiones bajo Incertidumbre',
-    credits: 6,
-    prerequisites: ['IN3141', 'IN3171'],
-    semester: 6,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3111',
-    name: 'Teoría de Juegos y Estrategia',
-    credits: 6,
-    prerequisites: ['IN2201', 'IN3141'],
-    semester: 6,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3242',
-    name: 'Estadística',
-    credits: 6,
-    prerequisites: ['IN3141'],
-    semester: 6,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3301',
-    name: 'Evaluación de Proyectos',
-    credits: 6,
-    prerequisites: ['IN2201', 'IN3141'],
-    semester: 6,
-    color: 'bg-common'
-  },
-
-  // Semestre VII
-  {
-    id: 'IN4102',
-    name: 'Taller de Concepción y Diseño de Proyectos',
-    credits: 6,
-    prerequisites: ['IN3171', 'IN3101'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3423',
-    name: 'Macroeconomía',
-    credits: 6,
-    prerequisites: ['IN2201', 'IN3141'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN3143',
-    name: 'Análisis de Datos e Inferencia Causal',
-    credits: 6,
-    prerequisites: ['IN3242'],
-    semester: 7,
-    color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E2',
-    name: 'Electivo',
-    credits: 6,
-    prerequisites: [],
-    semester: 7,
-    color: 'bg-elective'
-  },
-
-  // Semestre VIII
-  {
-    id: 'IN4273',
-    name: 'Gestión de Operaciones',
-    credits: 6,
-    prerequisites: ['IN3171', 'IN3242'],
-    semester: 8,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN4261',
-    name: 'Marketing',
-    credits: 6,
-    prerequisites: ['IN3171', 'IN3242', 'IN3301'],
-    semester: 8,
-    color: 'bg-common'
-  },
-  {
-    id: 'IN4232',
-    name: 'Finanzas',
-    credits: 6,
-    prerequisites: ['IN3301'],
-    semester: 8,
-    color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E3',
-    name: 'Electivo',
-    credits: 6,
-    prerequisites: [],
-    semester: 8,
-    color: 'bg-elective'
-  },
-
-  // Semestre IX
-  {
-    id: '_Especialización_E1',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E2',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E3',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: 'IN5112',
-    name: 'Dirección Estratégica',
-    credits: 6,
-    prerequisites: ['IN4273', 'IN4261', 'IN4232'],
-    semester: 9,
-    color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E4',
-    name: 'Electivo de Especialidad',
-    credits: 6,
-    prerequisites: [],
-    semester: 9,
-    color: 'bg-speciality_elective'
-  },
-
-  // Semestre X
-  {
-    id: '_Especialización_E4',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E5',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: '_Especialización_E6',
-    name: 'Especialización',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-specialization-elective'
-  },
-  {
-    id: 'IN5111',
-    name: 'Comportamiento Organizacional',
-    credits: 6,
-    prerequisites: ['IN4191'],
-    semester: 10,
-    color: 'bg-common'
-  },
-  {
-    id: '_Electivo_E5',
-    name: 'Electivo de Especialidad',
-    credits: 6,
-    prerequisites: [],
-    semester: 10,
-    color: 'bg-speciality_elective'
-  },
-
-  // Semestre XI
-  {
-    id: 'IN6193',
-    name: 'Proyecto de Título',
-    credits: 15,
-    prerequisites: ['IN5112', 'IN5111'],
-    semester: 11,
     color: 'bg-thesis'
-  },
-  {
-    id: 'IN6192',
-    name: 'Práctica Profesional Extendida',
-    credits: 15,
-    prerequisites: ['IN4191', 'IN5112', 'IN5111'],
-    semester: 11,
-    color: 'bg-internship'
-  },
-  {
-    id: 'EI2090',
-    name: 'Examen de Suficiencia en Inglés II',
-    credits: 0,
-    prerequisites: [],
-    semester: 11,
-    color: 'bg-english'
-  },
-    // Semestre V
-    {
-      id: 'IN3171',
-      name: 'Modelamiento y Optimización',
-      credits: 6,
-      prerequisites: ['MA2002'],
-      semester: 5,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3141',
-      name: 'Probabilidades',
-      credits: 6,
-      prerequisites: ['MA2001'],
-      semester: 5,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3101',
-      name: 'Taller de Liderazgo e Innovación Social',
-      credits: 6,
-      prerequisites: ['CD2021'],
-      semester: 5,
-      color: 'bg-common'
-    },
-    {
-      id: '_Electivo_E1',
-      name: 'Electivo',
-      credits: 6,
-      prerequisites: [],
-      semester: 5,
-      color: 'bg-elective'
-    },
-  
-    // Semestre VI
-    {
-      id: 'IN3272',
-      name: 'Decisiones bajo Incertidumbre',
-      credits: 6,
-      prerequisites: ['IN3141', 'IN3171'],
-      semester: 6,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3111',
-      name: 'Teoría de Juegos y Estrategia',
-      credits: 6,
-      prerequisites: ['IN2201', 'IN3141'],
-      semester: 6,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3242',
-      name: 'Estadística',
-      credits: 6,
-      prerequisites: ['IN3141'],
-      semester: 6,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3301',
-      name: 'Evaluación de Proyectos',
-      credits: 6,
-      prerequisites: ['IN2201', 'IN3141'],
-      semester: 6,
-      color: 'bg-common'
-    },
-  
-    // Semestre VII
-    {
-      id: 'IN4102',
-      name: 'Taller de Concepción y Diseño de Proyectos',
-      credits: 6,
-      prerequisites: ['IN3171', 'IN3101'],
-      semester: 7,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3423',
-      name: 'Macroeconomía',
-      credits: 6,
-      prerequisites: ['IN2201', 'IN3141'],
-      semester: 7,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN3143',
-      name: 'Análisis de Datos e Inferencia Causal',
-      credits: 6,
-      prerequisites: ['IN3242'],
-      semester: 7,
-      color: 'bg-common'
-    },
-    {
-      id: '_Electivo_E2',
-      name: 'Electivo',
-      credits: 6,
-      prerequisites: [],
-      semester: 7,
-      color: 'bg-elective'
-    },
-  
-    // Semestre VIII
-    {
-      id: 'IN4273',
-      name: 'Gestión de Operaciones',
-      credits: 6,
-      prerequisites: ['IN3171', 'IN3242'],
-      semester: 8,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN4261',
-      name: 'Marketing',
-      credits: 6,
-      prerequisites: ['IN3171', 'IN3242', 'IN3301'],
-      semester: 8,
-      color: 'bg-common'
-    },
-    {
-      id: 'IN4232',
-      name: 'Finanzas',
-      credits: 6,
-      prerequisites: ['IN3301'],
-      semester: 8,
-      color: 'bg-common'
-    },
-    {
-      id: '_Electivo_E3',
-      name: 'Electivo',
-      credits: 6,
-      prerequisites: [],
-      semester: 8,
-      color: 'bg-elective'
-    },
-  
-    // Semestre IX
-    {
-      id: '_Especialización_E1',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 9,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: '_Especialización_E2',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 9,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: '_Especialización_E3',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 9,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: 'IN5112',
-      name: 'Dirección Estratégica',
-      credits: 6,
-      prerequisites: ['IN4273', 'IN4261', 'IN4232'],
-      semester: 9,
-      color: 'bg-common'
-    },
-    {
-      id: '_Electivo_E4',
-      name: 'Electivo de Especialidad',
-      credits: 6,
-      prerequisites: [],
-      semester: 9,
-      color: 'bg-speciality_elective'
-    },
-  
-    // Semestre X
-    {
-      id: '_Especialización_E4',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 10,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: '_Especialización_E5',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 10,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: '_Especialización_E6',
-      name: 'Especialización',
-      credits: 6,
-      prerequisites: [],
-      semester: 10,
-      color: 'bg-specialization-elective'
-    },
-    {
-      id: 'IN5111',
-      name: 'Comportamiento Organizacional',
-      credits: 6,
-      prerequisites: ['IN4191'],
-      semester: 10,
-      color: 'bg-common'
-    },
-    {
-      id: '_Electivo_E5',
-      name: 'Electivo de Especialidad',
-      credits: 6,
-      prerequisites: [],
-      semester: 10,
-      color: 'bg-speciality_elective'
-    },
-  
-    // Semestre XI
-    {
-      id: 'IN6193',
-      name: 'Proyecto de Título',
-      credits: 15,
-      prerequisites: ['IN5112', 'IN5111'],
-      semester: 11,
-      color: 'bg-thesis'
-    },
-    {
-      id: 'IN6192',
-      name: 'Práctica Profesional Extendida',
-      credits: 15,
-      prerequisites: ['IN4191', 'IN5112', 'IN5111'],
-      semester: 11,
-      color: 'bg-internship'
-    },
-    {
-      id: 'EI2090',
-      name: 'Examen de Suficiencia en Inglés II',
-      credits: 0,
-      prerequisites: [],
-      semester: 11,
-      color: 'bg-english'
-    }
-  ];
+  }
+];

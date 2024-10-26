@@ -10,7 +10,9 @@ export default {
         internship: '#ffeca8',
         english: '#99d5cb',
         speciality_elective: '#a3d977',
+        speciality_elective_2: '#7bb648',
         thesis: '#d2bcd1',
+        
       },
     },
   },
