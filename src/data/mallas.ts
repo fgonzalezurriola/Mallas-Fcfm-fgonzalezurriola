@@ -50,6 +50,13 @@ export const mallas: Mallas[] = [
     imageUrl: '/logo_das.png',
     route: '/malla/astronomia'
   },
+  {
+    id: 'geologia',
+    name: 'Geología',
+    description: '',
+    imageUrl: '/logo_geologia.png',
+    route: '/malla/geologia'
+  },
   // {
   //   id: 'quimica',
   //   name: 'Ingeniería Civil en Química',
