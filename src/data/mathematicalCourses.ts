@@ -240,7 +240,7 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'MA3820',
+    id: 'MA3802',
     name: 'Teoría de la Medida',
     credits: 9,
     prerequisites: ['MA3801'],
@@ -248,7 +248,7 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'MA3802',
+    id: 'MA3705',
     name: 'Algoritmos Combinatoriales',
     credits: 6,
     prerequisites: ['MA3711'],
@@ -316,7 +316,7 @@ export const mathematicalCourses: Course[] = [
     id: 'MA4902',
     name: 'Práctica Profesional I',
     credits: 7,
-    prerequisites: [],
+    prerequisites: ['MA3402'],
     semester: 7,
     color: 'bg-internship'
   },
@@ -395,15 +395,15 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-speciality_elective_2'
   },
   {
-    id: '_FormacionIntegral',
-    name: 'Especialización',
+    id: '_FormacionIntegral1',
+    name: 'Formación Integrla de Especialidad',
     credits: 3,
     prerequisites: [],
     semester: 9,
     color: 'bg-holistic'
   },
   {
-    id: 'MA5902 (Requiere MA4402 o MA4703)',
+    id: 'MA5902 (Req. MA4402 o MA4703)',
     name: 'Practica Profesional II ',
     credits: 7,
     prerequisites: ['MA4902','MA4402','MA4703'],
@@ -420,8 +420,32 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-thesis'
   },
   {
-    id: '_Especialización2',
+    id: '_Especialización4',
     name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective_2'
+  },
+  {
+    id: '_Especialización5',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective_2'
+  },
+  {
+    id: '_Especialización6',
+    name: 'Especialización',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective_2'
+  },
+  {
+    id: '_ElectivoEspecialidad1',
+    name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
     semester: 10,
@@ -437,7 +461,23 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-thesis'
   },
   {
-    id: '_Electivo_E1',
+    id: 'MA6909',
+    name: 'Formación Integral de Especialidad',
+    credits: 21,
+    prerequisites: ['MA6906'],
+    semester: 11,
+    color: 'bg-thesis'
+  },
+  {
+    id: '_FormacionIntegral',
+    name: 'Especialización',
+    credits: 11,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-holistic'
+  },
+  {
+    id: '_ElectivoEspecialidad2',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -449,6 +489,14 @@ export const mathematicalCourses: Course[] = [
     name: 'Examen de Suficiencia en Inglés II',
     credits: 0,
     prerequisites: [],
+    semester: 11,
+    color: 'bg-english'
+  },
+  {
+    id: 'MA5903',
+    name: 'Práctica Profesional III',
+    credits: 7,
+    prerequisites: ['MA5902', 'MA5307'],
     semester: 11,
     color: 'bg-english'
   }
