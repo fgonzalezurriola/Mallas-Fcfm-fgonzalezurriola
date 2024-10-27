@@ -232,10 +232,10 @@ export const civilmention3Courses: Course[] = [
   },
   // Semestre VI
   {
-    id: 'CI3251',
-    name: 'Cálculo Numérico para Ingeniería Civil',
+    id: 'CI3242',
+    name: 'Análisis de Datos para Ingeniería',
     credits: 6,
-    prerequisites: ['MA2002'],
+    prerequisites: ['MA3403', 'MA3701/IN3171'],
     semester: 6,
     color: 'bg-common'
   },
@@ -248,7 +248,7 @@ export const civilmention3Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3211',
     name: 'Ingeniería Estructural',
     credits: 6,
     prerequisites: ['CI3111'],
@@ -256,7 +256,7 @@ export const civilmention3Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3261',
     name: 'Ingeniería Ambiental',
     credits: 6,
     prerequisites: ['CI3162'],
@@ -289,18 +289,18 @@ export const civilmention3Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI4111',
-    name: 'Dinámica de Estructuras',
+    id: 'CI4144',
+    name: 'Teoría de Flujos Vehiculares',
     credits: 6,
-    prerequisites: ['CI3211', 'CI3251'],
+    prerequisites: ['MA3403', 'CI3141'],
     semester: 7,
     color: 'bg-common'
   },
   {
-    id: 'CI4112',
-    name: 'Ingeniería de Materiales',
+    id: 'CI4146',
+    name: 'Economía de Transporte',
     credits: 6,
-    prerequisites: ['CI3111', 'MA3403'],
+    prerequisites: ['CI3141', 'CI3242'],
     semester: 7,
     color: 'bg-common'
   },
@@ -318,7 +318,7 @@ export const civilmention3Courses: Course[] = [
     credits: 7,
     prerequisites: ['CI3111', 'CI3141', 'CI3162'],
     semester: 7,
-    color: 'bg-common'
+    color: 'bg-internship'
   },
   // Semestre VIII
   {
@@ -338,18 +338,18 @@ export const civilmention3Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI4211',
-    name: 'Diseño Sísmico de Estructuras',
+    id: 'CI4242',
+    name: 'Diseño de Sistemas de Transporte',
     credits: 6,
-    prerequisites: ['CI4121', 'CI4111'],
+    prerequisites: ['CI4146'],
     semester: 8,
     color: 'bg-common'
   },
   {
-    id: 'CI4211',
-    name: 'Diseño Hormigón Armado',
+    id: 'CI4246',
+    name: 'Ingeniería de Tránsito',
     credits: 6,
-    prerequisites: ['CI3211', 'CI4112'],
+    prerequisites: ['CI4144'],
     semester: 8,
     color: 'bg-common'
   },
@@ -375,6 +375,129 @@ export const civilmention3Courses: Course[] = [
     credits: 0,
     prerequisites: [],
     semester: 8,
+    color: 'bg-english'
+  },
+  // Semestre IX
+  {
+    id: 'CI5146',
+    name: 'Redes de Transporte',
+    credits: 6,
+    prerequisites: ['CI3242'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5144',
+    name: 'Demanda de Transporte',
+    credits: 6,
+    prerequisites: ['CI4146'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5142',
+    name: 'Diseño Vial',
+    credits: 6,
+    prerequisites: ['CI4231', 'CI4144'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5143',
+    name: 'Logística y Producción',
+    credits: 6,
+    prerequisites: ['CI3242', 'CI4242'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: '_Especialización1',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: 'CI5151',
+    name: 'Práctica II',
+    credits: 14,
+    prerequisites: ['CI4151', 'CI3262'],
+    semester: 9,
+    color: 'bg-internship'
+  },
+  // Semestre X
+  {
+    id: 'CI6907',
+    name: 'Taller de Habilitación Profesional',
+    credits: 3,
+    prerequisites: ['CI5151'],
+    semester: 10,
+    color: 'bg-thesis'
+  },
+  {
+    id: 'CI5244',
+    name: 'Competencia y Regulación en Transporte',
+    credits: 6,
+    prerequisites: ['CI4146'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5143',
+    name: 'Economía Urbana',
+    credits: 6,
+    prerequisites: ['CI4146'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5243',
+    name: 'Proyecto de Diseño Tecnológico',
+    credits: 6,
+    prerequisites: ['CI5142'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: '_Especialización2',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_Especialización3',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  // Semestre XI
+  {
+    id: 'CI6919',
+    name: 'Actividad de Habilitación Profesional',
+    credits: 27,
+    prerequisites: ['CI6907'],
+    semester: 11,
+    color: 'bg-thesis'
+  },
+  {
+    id: '_FormacionIntegral3',
+    name: 'Formación Integral de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-holistic'
+  },
+  {
+    id: 'EI2090',
+    name: 'Examen de Suficiencia en Inglés II',
+    credits: 0,
+    prerequisites: [],
+    semester: 11,
     color: 'bg-english'
   }
 ];
