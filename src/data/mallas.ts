@@ -57,32 +57,32 @@ export const mallas: Mallas[] = [
     imageUrl: '/logo_geologia.png',
     route: '/malla/geologia'
   },
-  // {
-  //   id: 'quimica',
-  //   name: 'Ingeniería Civil en Química',
-  //   description: '',
-  //   imageUrl: '/logo_diqbm.png',
-  //   route: '/malla/quimica'
-  // },
-  // {
-  //   id: 'civil1',
-  //   name: 'Ingeniería Civil: Estructura, Construcción y Geotecnia',
-  //   description: '',
-  //   imageUrl: '/logo_dic.png',
-  //   route: '/malla/civil1'
-  // },
-  // {
-  //   id: 'civil2',
-  //   name: 'Ingeniería Civil: Hidráulica, Sanitaria y Ambiental',
-  //   description: '',
-  //   imageUrl: '/logo_dic.png',
-  //   route: '/malla/civil2'
-  // },
-  // {
-  //   id: 'civil3',
-  //   name: 'Ingeniería Civil: Transporte',
-  //   description: '',
-  //   imageUrl: '/logo_dic.png',
-  //   route: '/malla/civil3'
-  // }
+  {
+    id: 'quimica',
+    name: 'Ingeniería Civil en Química',
+    description: '',
+    imageUrl: '/logo_diqbm.png',
+    route: '/malla/quimica'
+  },
+  {
+    id: 'civil1',
+    name: 'Ingeniería Civil: Estructura, Construcción y Geotecnia',
+    description: '',
+    imageUrl: '/logo_dic.png',
+    route: '/malla/civil1'
+  },
+  {
+    id: 'civil2',
+    name: 'Ingeniería Civil: Hidráulica, Sanitaria y Ambiental',
+    description: '',
+    imageUrl: '/logo_dic.png',
+    route: '/malla/civil2'
+  },
+  {
+    id: 'civil3',
+    name: 'Ingeniería Civil: Transporte',
+    description: '',
+    imageUrl: '/logo_dic.png',
+    route: '/malla/civil3'
+  }
 ];

@@ -318,7 +318,7 @@ export const chemistryCourses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 7,
-    color: 'bg-elective'
+    color: 'bg-holistic'
   },
   {
     id: 'IQ4911',
@@ -375,7 +375,7 @@ export const chemistryCourses: Course[] = [
     credits: 3,
     prerequisites: [],
     semester: 8,
-    color: 'bg-elective'
+    color: 'bg-holistic'
   },
   {
     id: 'EI1090',
