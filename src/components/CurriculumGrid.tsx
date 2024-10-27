@@ -48,15 +48,15 @@ const CurriculumGrid: React.FC = () => {
   } else if (currentPath.includes('quimica')) {
     courses = chemistryCourses;
     curriculumName = 'Ingeniería Civil Química'
-  } else if (currentPath.includes('civil1')) {
+  } else if (currentPath.includes('Estructura')) {
     courses = civilmention1Courses;
-    curriculumName = 'Ingeniería Civil1'
-  } else if (currentPath.includes('civil2')) {
+    curriculumName = 'Ingeniería Civil: Estructura, Construcción y Geotecnia'
+  } else if (currentPath.includes('Sanitaria')) {
     courses = civilmention2Courses;
-    curriculumName = 'Ingeniería Civil2'
-  } else if (currentPath.includes('civil3')) {
+    curriculumName = 'Ingeniería Civil: Hidráulica, Sanitaria y Ambiental'
+  } else if (currentPath.includes('Transporte')) {
     courses = civilmention3Courses;
-    curriculumName = 'Ingeniería Civil3'
+    curriculumName = 'Ingeniería Civil: Transporte'
   } else if (currentPath.includes('matematica')) {
     courses = mathematicalCourses;
     curriculumName = 'Ingeniería Civil en Matemáticas'

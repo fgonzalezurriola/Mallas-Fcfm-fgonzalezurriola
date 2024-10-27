@@ -65,24 +65,24 @@ export const mallas: Mallas[] = [
     route: '/malla/quimica'
   },
   {
-    id: 'civil1',
+    id: 'Civil-Estructura-Construcción-y-Geotecnia',
     name: 'Ingeniería Civil: Estructura, Construcción y Geotecnia',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/civil1'
+    route: '/malla/Civil-Estructura-Construcción-y-Geotecnia'
   },
   {
-    id: 'civil2',
+    id: 'Civil-Hidráulica-Sanitaria-y-Ambiental',
     name: 'Ingeniería Civil: Hidráulica, Sanitaria y Ambiental',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/civil2'
+    route: '/malla/Civil-Hidráulica-Sanitaria-y-Ambiental'
   },
   {
-    id: 'civil3',
+    id: 'Civil-Transporte',
     name: 'Ingeniería Civil: Transporte',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/civil3'
+    route: '/malla/Civil-Transporte'
   }
 ];

@@ -232,8 +232,8 @@ export const civilmention2Courses: Course[] = [
   },
   // Semestre VI
   {
-    id: 'CI3251',
-    name: 'Cálculo Numérico para Ingeniería Civil',
+    id: 'GL3101/CI3242/CI3251',
+    name: 'Formación Especializada de Licenciatura',
     credits: 6,
     prerequisites: ['MA2002'],
     semester: 6,
@@ -248,7 +248,7 @@ export const civilmention2Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3211',
     name: 'Ingeniería Estructural',
     credits: 6,
     prerequisites: ['CI3111'],
@@ -256,7 +256,7 @@ export const civilmention2Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3261',
     name: 'Ingeniería Ambiental',
     credits: 6,
     prerequisites: ['CI3162'],
@@ -289,18 +289,18 @@ export const civilmention2Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI4111',
-    name: 'Dinámica de Estructuras',
+    id: 'CI4165',
+    name: 'Calidad de Agua',
     credits: 6,
-    prerequisites: ['CI3211', 'CI3251'],
+    prerequisites: ['CI3261'],
     semester: 7,
     color: 'bg-common'
   },
   {
-    id: 'CI4112',
-    name: 'Ingeniería de Materiales',
+    id: 'CI4164',
+    name: 'Hidráulica',
     credits: 6,
-    prerequisites: ['CI3111', 'MA3403'],
+    prerequisites: ['CI3262'],
     semester: 7,
     color: 'bg-common'
   },
@@ -338,18 +338,18 @@ export const civilmention2Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI4211',
-    name: 'Diseño Sísmico de Estructuras',
+    id: 'CI4261',
+    name: 'Hidrología',
     credits: 6,
-    prerequisites: ['CI4121', 'CI4111'],
+    prerequisites: ['CI4164', 'MA3403'],
     semester: 8,
     color: 'bg-common'
   },
   {
-    id: 'CI4211',
-    name: 'Diseño Hormigón Armado',
+    id: 'CI4262',
+    name: 'Hidráulica de Aguas Subterráneas y Aprovechamiento',
     credits: 6,
-    prerequisites: ['CI3211', 'CI4112'],
+    prerequisites: ['CI4121', 'CI3262'],
     semester: 8,
     color: 'bg-common'
   },
@@ -376,5 +376,136 @@ export const civilmention2Courses: Course[] = [
     prerequisites: [],
     semester: 8,
     color: 'bg-english'
+  },
+  // Semestre IX
+  {
+    id: 'CI5161',
+    name: 'Hidráulica Aplicada al Diseño de Obras',
+    credits: 6,
+    prerequisites: ['CI4261'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5162',
+    name: 'Diseño de Sistemas de Tratamiento de Aguas',
+    credits: 6,
+    prerequisites: ['CI4165'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5163',
+    name: 'Análisis de Sistemas Ambientales',
+    credits: 6,
+    prerequisites: ['MA3701/IN3171', 'CI3261'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5164',
+    name: 'Procesos de Transporte en Sistemas Acuáticos',
+    credits: 6,
+    prerequisites: ['CI4262', 'CI4165'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5165',
+    name: 'Diseño Hidroambiental',
+    credits: 6,
+    prerequisites: ['CI4165', 'CI4261'],
+    semester: 9,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5151',
+    name: 'Práctica II',
+    credits: 14,
+    prerequisites: ['CI3262', 'CI4151'],
+    semester: 9,
+    color: 'bg-internship'
+  },
+  // Semestre X
+  {
+    id: 'CI6907',
+    name: 'Taller de Habilitación Profesional (CR270)',
+    credits: 3,
+    prerequisites: ['CR270'],
+    semester: 10,
+    color: 'bg-thesis'
+  },
+  {
+    id: 'CI5621',
+    name: 'Proyecto de Sistemas Hidráulicos Sanitarios y Ambientales',
+    credits: 6,
+    prerequisites: ['CI4231', 'CI4251'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: 'CI5262',
+    name: 'Proyecto Integrado de Recursos Hídricos',
+    credits: 6,
+    prerequisites: ['CI4261', 'CI4251'],
+    semester: 10,
+    color: 'bg-common'
+  },
+  {
+    id: '_Electivo1',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_Electivo2',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  {
+    id: '_Electivo3',
+    name: 'Electivo de Especialidad',
+    credits: 6,
+    prerequisites: [],
+    semester: 10,
+    color: 'bg-speciality_elective'
+  },
+  // Semestre XI
+  {
+    id: 'CI6191',
+    name: 'Actividad de Habilitación Profesional (+CR300)',
+    credits: 27,
+    prerequisites: ['CI6907'],
+    semester: 11,
+    color: 'bg-thesis'
+  },
+  {
+    id: '_FormacionIntegral3',
+    name: 'Formación Integral de Especialidad',
+    credits: 3,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-holistic'
+  },
+  {
+    id: 'EI2090',
+    name: 'Examen de Suficiencia en Inglés II',
+    credits: 0,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-english'
+  },
+  {
+    id: 'CI6161',
+    name: 'Práctica III',
+    credits: 14,
+    prerequisites: [],
+    semester: 11,
+    color: 'bg-internship'
   }
 ];

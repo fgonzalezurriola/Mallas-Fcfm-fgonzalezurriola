@@ -248,7 +248,7 @@ export const civilmention1Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3211',
     name: 'Ingeniería Estructural',
     credits: 6,
     prerequisites: ['CI3111'],
@@ -256,7 +256,7 @@ export const civilmention1Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI3321',
+    id: 'CI3261',
     name: 'Ingeniería Ambiental',
     credits: 6,
     prerequisites: ['CI3162'],
@@ -346,7 +346,7 @@ export const civilmention1Courses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'CI4211',
+    id: 'CI4212',
     name: 'Diseño Hormigón Armado',
     credits: 6,
     prerequisites: ['CI3211', 'CI4112'],

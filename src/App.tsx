@@ -14,9 +14,9 @@ function App() {
         <Route path="/malla/quimica" element={<CurriculumGrid />} />
         <Route path="/malla/geologia" element={<CurriculumGrid />} />
         <Route path="/malla/geofisica" element={<CurriculumGrid />} />
-        <Route path="/malla/civil1" element={<CurriculumGrid />} />
-        <Route path="/malla/civil2" element={<CurriculumGrid />} />
-        <Route path="/malla/civil3" element={<CurriculumGrid />} />
+        <Route path="/malla/Civil-Estructura-Construcción-y-Geotecnia" element={<CurriculumGrid />} />
+        <Route path="/malla/Civil-Hidráulica-Sanitaria-y-Ambiental" element={<CurriculumGrid />} />
+        <Route path="/malla/Civil-Transporte" element={<CurriculumGrid />} />
         <Route path="/malla/mecanica" element={<CurriculumGrid />} />
         <Route path="/malla/matematica" element={<CurriculumGrid />} />
         <Route path="/malla/fisica" element={<CurriculumGrid />} />
