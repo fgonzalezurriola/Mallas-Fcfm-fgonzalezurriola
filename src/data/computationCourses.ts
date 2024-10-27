@@ -200,7 +200,7 @@ export const computationCourses: Course[] = [
   },
   {
     id: 'CC3501',
-    name: 'Modelación y Computación Gráfica',
+    name: 'Modelación y Computación Gráfica para Ingenieros',
     credits: 6,
     prerequisites: ['MA2001', 'MA2601', 'CC1002', 'FI2001'],
     semester: 5,
@@ -223,7 +223,7 @@ export const computationCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: '_EH3',
+    id: '_FormacionIntegral',
     name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
@@ -231,7 +231,7 @@ export const computationCourses: Course[] = [
     color: 'bg-holistic'
   },
   {
-    id: '_EH4',
+    id: '_FormacionIntegral',
     name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
@@ -380,7 +380,7 @@ export const computationCourses: Course[] = [
   },
   // Semestre IX
   {
-    id: '_Electivo_E1',
+    id: '_ElectivoEspecialidad1',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -388,7 +388,7 @@ export const computationCourses: Course[] = [
     color: 'bg-speciality_elective'
   },
   {
-    id: '_Electivo_E2',
+    id: '_ElectivoEspecialidad2',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -396,7 +396,7 @@ export const computationCourses: Course[] = [
     color: 'bg-speciality_elective'
   },
   {
-    id: '_Electivo_E3',
+    id: '_ElectivoEspecialidad3',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -404,7 +404,7 @@ export const computationCourses: Course[] = [
     color: 'bg-speciality_elective'
   },
   {
-    id: '_Nucleo',
+    id: '_Nucleo1',
     name: 'Núcleo Gestión para Ingenieros',
     credits: 6,
     prerequisites: [],
@@ -412,9 +412,17 @@ export const computationCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: '(Dos cursos)',
+    id: '_FormacionIntegral1',
     name: 'Formación Integral de Especialidad',
-    credits: 6,
+    credits: 3,
+    prerequisites: [],
+    semester: 9,
+    color: 'bg-holistic'
+  },
+  {
+    id: '_FormacionIntegral2',
+    name: 'Formación Integral de Especialidad',
+    credits: 3,
     prerequisites: [],
     semester: 9,
     color: 'bg-holistic'
@@ -422,7 +430,7 @@ export const computationCourses: Course[] = [
   {
     id: 'CC5901',
     name: 'Práctica Profesional II',
-    credits: 6,
+    credits: 7,
     prerequisites: ['CC4901','CC4401','CC4101'],
     semester: 9,
     color: 'bg-internship'
@@ -437,7 +445,7 @@ export const computationCourses: Course[] = [
     color: 'bg-thesis'
   },
   {
-    id: '_Electivo_E4',
+    id: '_ElectivoEspecialidad4',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],
@@ -445,7 +453,7 @@ export const computationCourses: Course[] = [
     color: 'bg-speciality_elective'
   },
   {
-    id: '_Electivo_E5',
+    id: '_ElectivoEspecialidad5',
     name: 'Electivo de Especialidad',
     credits: 6,
     prerequisites: [],

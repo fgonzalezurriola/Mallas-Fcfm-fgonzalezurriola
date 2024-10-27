@@ -396,7 +396,7 @@ export const mathematicalCourses: Course[] = [
   },
   {
     id: '_FormacionIntegral1',
-    name: 'Formación Integrla de Especialidad',
+    name: 'Formación Integral de Especialidad',
     credits: 3,
     prerequisites: [],
     semester: 9,
@@ -408,7 +408,7 @@ export const mathematicalCourses: Course[] = [
     credits: 7,
     prerequisites: ['MA4902','MA4402','MA4703'],
     semester: 9,
-    color: 'bg-holistic'
+    color: 'bg-internship'
   },
   // Semestre X
   {
@@ -461,19 +461,11 @@ export const mathematicalCourses: Course[] = [
     color: 'bg-thesis'
   },
   {
-    id: 'MA6909',
-    name: 'Formación Integral de Especialidad',
-    credits: 21,
-    prerequisites: ['MA6906'],
-    semester: 11,
-    color: 'bg-thesis'
-  },
-  {
     id: '_FormacionIntegral',
-    name: 'Especialización',
-    credits: 11,
+    name: 'Formación Integral de Especialidad',
+    credits: 3,
     prerequisites: [],
-    semester: 9,
+    semester: 11,
     color: 'bg-holistic'
   },
   {
@@ -496,7 +488,7 @@ export const mathematicalCourses: Course[] = [
     id: 'MA5903',
     name: 'Práctica Profesional III',
     credits: 7,
-    prerequisites: ['MA5902', 'MA5307'],
+    prerequisites: ['MA5902 (Req. MA4402 o MA4703)', 'MA5307'],
     semester: 11,
     color: 'bg-english'
   }

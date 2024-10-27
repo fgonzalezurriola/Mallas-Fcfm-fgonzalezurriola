@@ -224,7 +224,7 @@ export const electricalCourses: Course[] = [
 },
 {
   id: 'EL3105',
-  name: 'Seminario de Ingeniería Eléctrica', //no es el original
+  name: 'Seminario de Ingeniería Eléctrica e Innovación Tecnológica',
   credits: 6,
   prerequisites: ['CD2201'],
   semester: 5,
@@ -264,7 +264,7 @@ export const electricalCourses: Course[] = [
   color: 'bg-common'
 },
 {
-  id: '_EH3',
+  id: '_FormacionIntegral1',
   name: 'Formación Integral EH/FG',
   credits: 3,
   prerequisites: [],
@@ -272,7 +272,7 @@ export const electricalCourses: Course[] = [
   color: 'bg-holistic'
 },
 {
-  id: '_EH4',
+  id: '_FormacionIntegral2',
   name: 'Formación Integral EH/FG',
   credits: 3,
   prerequisites: [],
@@ -341,7 +341,7 @@ export const electricalCourses: Course[] = [
   id: '_Nucleo2',
   name: 'Laboratorio de Línea de Especialización',
   credits: 6,
-  prerequisites: ['EL4111', 'EL4112'],
+  prerequisites: [],
   semester: 8,
   color: 'bg-common'
 },
@@ -357,7 +357,7 @@ export const electricalCourses: Course[] = [
   id: 'EL4204',
   name: 'Formulación y Evaluación de Proyectos',
   credits: 6,
-  prerequisites: ['EL4115'],
+  prerequisites: ['EL4204'],
   semester: 8,
   color: 'bg-common'
 },
@@ -411,17 +411,17 @@ export const electricalCourses: Course[] = [
   color: 'bg-speciality_elective'
 },
 {
-  id: 'EL6201',
+  id: 'EL5115',
   name: 'Práctica Profesional II',
   credits: 14,
-  prerequisites: ['EL4204','EL4111','EL4112','EL4113'],
+  prerequisites: ['EL4204', 'EL4111', 'EL4112', 'EL4113'],
   semester: 9,
   color: 'bg-internship'
 },
 
 // Semestre X
 {
-  id: 'EL6202',
+  id: 'EL6201',
   name: 'Taller de Emprendimiento e Innovación',
   credits: 6,
   prerequisites: ['EL6101'],
@@ -465,7 +465,7 @@ export const electricalCourses: Course[] = [
   id: 'EL6301',
   name: 'Taller de Desempeño Profesional',
   credits: 3,
-  prerequisites: [],
+  prerequisites: ['EL6101'],
   semester: 11,
   color: 'bg-common'
 },
