@@ -84,5 +84,12 @@ export const mallas: Mallas[] = [
     description: '',
     imageUrl: '/logo_dic.png',
     route: '/malla/civil-transporte'
+  },
+  {
+    id: 'biotecnologia',
+    name: 'Ingeniería Civil en Biotecnología',
+    description: '',
+    imageUrl: '/logo_diqbm.png',
+    route: '/malla/biotecnologia'
   }
 ];

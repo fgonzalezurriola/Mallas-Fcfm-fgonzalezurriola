@@ -21,6 +21,7 @@ function App() {
         <Route path="/malla/matematica" element={<CurriculumGrid />} />
         <Route path="/malla/fisica" element={<CurriculumGrid />} />
         <Route path="/malla/astronomia" element={<CurriculumGrid />} />
+        <Route path="/malla/biotecnologia" element={<CurriculumGrid />} />
       </Routes>
     </Router>
   );

@@ -14,6 +14,7 @@ import { civilmention2Courses } from '../data/civilmention2Courses.ts';
 import { civilmention3Courses } from '../data/civilmention3Courses.ts';
 import { mathematicalCourses } from '../data/mathematicalCourses.ts';
 import { geologyCourses } from '../data/geologyCourses.ts';
+import { biotechCourses } from '../data/biotechCourses.ts';
 import { geophysicsCourses } from '../data/geophysicsCourses.ts';
 import { PiMouseLeftClickFill, PiMouseRightClickFill } from "react-icons/pi";
 import { placeholderCourses } from '../data/placeHolderCourses.ts';
@@ -66,6 +67,9 @@ const CurriculumGrid: React.FC = () => {
   } else if (currentPath.includes('geofisica')) {
     courses = geophysicsCourses;
     curriculumName = 'Licenciatura en Ciencias Mención Geofísica'
+  } else if (currentPath.includes('biotecnologia')) {
+    courses = biotechCourses;
+    curriculumName = 'Ingeniería Civil en Biotecnología'
   } else {
     courses = placeholderCourses;
   }
