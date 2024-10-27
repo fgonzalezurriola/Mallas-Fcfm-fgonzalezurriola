@@ -152,15 +152,15 @@ const CurriculumGrid: React.FC = () => {
   return (
     <div className="p-0 min-h-screen bg-gray-50">
       <BackButton />
-      <div className="relative flex items-center justify-between mb-3.5 pt-3.5">
+      <div className="relative flex items-center justify-between mb-3 pt-3">
         <h1 className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
           Malla {curriculumName}
         </h1>
         <div className="flex items-center gap-4 ml-auto">
-          <PiMouseLeftClickFill />
-          <span className="text-sw">Marca Temporal</span>
-          <PiMouseRightClickFill />
-          <span className="text-sw mr-16">Marca <strong>Completado</strong></span>
+          <PiMouseLeftClickFill size={16}/>
+          <span className="text-xs">Marca Temporal</span>
+          <PiMouseRightClickFill size={16}/>
+          <span className="text-xs mr-16">Marca <strong>Completado</strong></span>
         </div>
       </div>
 
