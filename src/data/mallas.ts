@@ -36,20 +36,20 @@ export const mallas: Mallas[] = [
     imageUrl: '/logo_dimec.png',
     route: '/malla/mecanica'
   },
-  // {
-  //   id: 'fisica',
-  //   name: 'Licenciatura en Ciencias mención Física',
-  //   description: '',
-  //   imageUrl: '/logo_dfi.png',
-  //   route: '/malla/fisica'
-  // },
-  // {
-  //   id: 'astronomia',
-  //   name: 'Licenciatura en Ciencias mención Astronomía',
-  //   description: '',
-  //   imageUrl: '/logo_das.png',
-  //   route: '/malla/astronomia'
-  // },
+  {
+    id: 'fisica',
+    name: 'Licenciatura en Ciencias mención Física',
+    description: '',
+    imageUrl: '/logo_dfi.png',
+    route: '/malla/fisica'
+  },
+  {
+    id: 'astronomia',
+    name: 'Licenciatura en Ciencias mención Astronomía',
+    description: '',
+    imageUrl: '/logo_das.png',
+    route: '/malla/astronomia'
+  },
   // {
   //   id: 'quimica',
   //   name: 'Ingeniería Civil en Química',
