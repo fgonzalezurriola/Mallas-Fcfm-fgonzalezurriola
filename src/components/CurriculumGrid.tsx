@@ -143,7 +143,11 @@ const CurriculumGrid: React.FC = () => {
     return semesterCourses.length > 0 && semesterCourses.every(course => blackCourseIds.has(course.id));
   };
 
-  const semesters = Array.from({ length: TOTAL_SEMESTERS }, (_, i) => i + 1);
+  const isSemesterEmpty = (semester: number): boolean => {
+    return courses.filter(course => course.semester === semester).length === 0;
+  }
+
+  const semesters = Array.from({ length: TOTAL_SEMESTERS }, (_, i) => i + 1).filter((semester) => !isSemesterEmpty(semester)); ;
 
   return (
     <div className="p-0 min-h-screen bg-gray-50">
