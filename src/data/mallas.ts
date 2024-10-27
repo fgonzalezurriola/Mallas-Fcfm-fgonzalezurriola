@@ -69,20 +69,20 @@ export const mallas: Mallas[] = [
     name: 'Ingeniería Civil: Estructura, Construcción y Geotecnia',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/Civil-Estructura-Construcción-y-Geotecnia'
+    route: '/malla/civil-estructura-construcción-y-geotecnia'
   },
   {
     id: 'Civil-Hidráulica-Sanitaria-y-Ambiental',
     name: 'Ingeniería Civil: Hidráulica, Sanitaria y Ambiental',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/Civil-Hidráulica-Sanitaria-y-Ambiental'
+    route: '/malla/civil-hidráulica-sanitaria-y-ambiental'
   },
   {
     id: 'Civil-Transporte',
     name: 'Ingeniería Civil: Transporte',
     description: '',
     imageUrl: '/logo_dic.png',
-    route: '/malla/Civil-Transporte'
+    route: '/malla/civil-transporte'
   }
 ];
