@@ -224,7 +224,7 @@ export const computationCourses: Course[] = [
   },
   {
     id: '_EH3',
-    name: 'Formación Integral DR/EH/FG/EI/FT',
+    name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
     semester: 5,
@@ -232,7 +232,7 @@ export const computationCourses: Course[] = [
   },
   {
     id: '_EH4',
-    name: 'Formación Integral DR/EH/FG/EI/FT',
+    name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
     semester: 5,

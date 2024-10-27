@@ -189,4 +189,184 @@ export const physicsCourses: Course[] = [
     semester: 4,
     color: 'bg-holistic'
   },
+  // Semestre V
+  {
+    id: 'MA3403',
+    name: 'Probabilidades y Estadística',
+    credits: 6,
+    prerequisites: ['MA2001'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3001',
+    name: 'Vibraciones y Ondas',
+    credits: 6,
+    prerequisites: ['MA2002', 'FI2002', 'FI2001'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3002',
+    name: 'Métodos Matemáticos de la Física',
+    credits: 6,
+    prerequisites: ['MA2002', 'FI2002'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3104',
+    name: 'Métodos Numéricos para Ciencias e Ingeniería',
+    credits: 6,
+    prerequisites: ['MA2002', 'FI2002', 'CC1002'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3003',
+    name: 'Física Experimental I',
+    credits: 6,
+    prerequisites: ['FI2002','FI2004/IQ2212'],
+    semester: 5,
+    color: 'bg-common'
+  },
+  // Semestre VI
+  {
+    id: 'FI3111',
+    name: 'Mecánica Clásica',
+    credits: 9,
+    prerequisites: ['FI3001'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3102',
+    name: 'Física Moderna',
+    credits: 6,
+    prerequisites: ['FI3001', 'MA3403'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3106',
+    name: 'Electrodinámica',
+    credits: 6,
+    prerequisites: ['FI3001', 'FI3002'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI3105',
+    name: 'Física Experimental Ii',
+    credits: 6,
+    prerequisites: ['FI3003'],
+    semester: 6,
+    color: 'bg-common'
+  },
+  {
+    id: '_FormacionIntegral1',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
+    prerequisites: [],
+    semester: 6,
+    color: 'bg-holistic'
+  },
+  {
+    id: '_FormacionIntegral2',
+    name: 'Formación Integral EH/FG',
+    credits: 3,
+    prerequisites: [],
+    semester: 6,
+    color: 'bg-holistic'
+  },
+  // Semestre VII
+  {
+    id: 'F4001',
+    name: 'Mecánica Cuántica',
+    credits: 9,
+    prerequisites: ['FI3002', 'FI3102', 'FI3111'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'F4012',
+    name: 'Introducción a la Investigación I',
+    credits: 6,
+    prerequisites: ['FI3104', 'FI3105'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI4005',
+    name: 'Métodos Numéricos para la Física',
+    credits: 6,
+    prerequisites: ['FI3104'],
+    semester: 7,
+    color: 'bg-common'
+  },
+  {
+    id: '_Electivo1',
+    name: 'Electivo',
+    credits: 3,
+    prerequisites: [],
+    semester: 7,
+    color: 'bg-elective'
+  },
+  {
+    id: '_Electivo2',
+    name: 'Electivo',
+    credits: 6,
+    prerequisites: [],
+    semester: 7,
+    color: 'bg-elective'
+  },
+  // Semestre VIII
+  {
+    id: 'FI4101',
+    name: 'Introducción a la Física del Sólido',
+    credits: 6,
+    prerequisites: ['FI4001', 'FI3106'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'FI4112',
+    name: 'Introducción a la Investigación II',
+    credits: 6,
+    prerequisites: ['FI4012'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: 'F4104',
+    name: 'Mecánica Estadística',
+    credits: 9,
+    prerequisites: ['F4001'],
+    semester: 8,
+    color: 'bg-common'
+  },
+  {
+    id: '_Electivo3',
+    name: 'Electivo',
+    credits: 3,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-elective'
+  },
+  {
+    id: '_Electivo3',
+    name: 'Electivo',
+    credits: 6,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-elective'
+  },
+  {
+    id: 'EI1090',
+    name: 'Examen de Suficiencia en Inglés I',
+    credits: 0,
+    prerequisites: [],
+    semester: 8,
+    color: 'bg-english'
+  },
 ];
