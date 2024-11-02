@@ -10,14 +10,12 @@ El objetivo de este proyecto es ofrecer una plataforma intuitiva y de fácil nav
 
 - **Visualización interactiva**: Explora la malla curricular de manera gráfica.
 - **Consulta de prerrequisitos**: Cada asignatura muestra claramente sus prerrequisitos y dependencias.
-- **Contribución al open source**: El código está estructurado para que otros puedan colaborar y extender sus funcionalidades.
+- **Marcado temporal**: Con ambos clicks uno puede marcar temporalmente los ramos de la malla
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **React**: Para construir la interfaz de usuario interactiva y modular.
-- **TypeScript**: Aporta tipado estático para un desarrollo más seguro y eficiente.
-- **Tailwind CSS**: Para diseñar una interfaz moderna y responsiva.
-- **React Icons**: Utilizado para añadir íconos visuales a la interfaz.
+- **Frontend**: React, Tailwind CSS, TypeScript, React-Icons
+- **Herramientas**: Git, Vite
 
 ## 🖥️ Instalación y Uso
 
@@ -26,13 +24,13 @@ Para ejecutar el proyecto localmente:
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/fgonzalezurriola/Mallas-Fcfm-fgonzalezurriola/
    ```
 
 2. Ve a la carpeta del proyecto:
 
    ```bash
-   cd tu-repositorio
+   cd Mallas-Fcfm-fgonzalezurriola
    ```
 
 3. Instala las dependencias:
@@ -51,9 +49,7 @@ El proyecto estará disponible en tu navegador en `http://localhost:5173`.
 
 ## 🌐 Despliegue
 
-Este proyecto es fácilmente desplegable en plataformas como Vercel o Netlify. Puedes conectar el repositorio y el despliegue automático configurará el entorno para producción.
-
-Actualmente el proyecto está desplegado en Vercel, puedes acceder a la [malla curricular de FCFM](https://mallas-fcfm-fgonzalezurriola.vercel.app/).
+Actualmente el proyecto está desplegado en Vercel, puedes acceder a él: [malla curricular de FCFM](https://mallas-fcfm-fgonzalezurriola.vercel.app/).
 
 ---
 
