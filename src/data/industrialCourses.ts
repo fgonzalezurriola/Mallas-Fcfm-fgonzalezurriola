@@ -323,7 +323,7 @@ export const industrialCourses: Course[] = [
     id: 'IN4191',
     name: 'Practica Profesional I',
     credits: 7,
-    prerequisites: ['IN3272','IN4102','IN3301','IN4143','IN4151','FI2002','FI2004/IQ2212'],
+    prerequisites: ['IN3171','IN3242','IN3101','IN3301','FI2002','FI2004/IQ2212'],
     semester: 6,
     color: 'bg-internship'
   },
@@ -348,7 +348,7 @@ export const industrialCourses: Course[] = [
     id: 'IN4232',
     name: 'Finanzas',
     credits: 6,
-    prerequisites: ['IN3301'],
+    prerequisites: ['IN3301', 'IN3242'],
     semester: 8,
     color: 'bg-common'
   },
@@ -471,7 +471,7 @@ export const industrialCourses: Course[] = [
     id: 'IN6192',
     name: 'Practica Profesional Extendida',
     credits: 15,
-    prerequisites: ['IN4191','IN5112','IN5111'],
+    prerequisites: ['IN4301', 'IN4703', 'IN4901', 'IN3702'],
     semester: 11,
     color: 'bg-thesis'
   },
