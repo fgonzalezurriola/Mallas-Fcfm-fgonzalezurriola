@@ -223,7 +223,7 @@ export const computationCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: '_FormacionIntegral',
+    id: '_FormacionIntegral1',
     name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
@@ -231,7 +231,7 @@ export const computationCourses: Course[] = [
     color: 'bg-holistic'
   },
   {
-    id: '_FormacionIntegral',
+    id: '_FormacionIntegral2',
     name: 'Formación Integral EH/FG',
     credits: 3,
     prerequisites: [],
@@ -412,7 +412,7 @@ export const computationCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: '_FormacionIntegral1',
+    id: '_FormacionIntegral3',
     name: 'Formación Integral de Especialidad',
     credits: 3,
     prerequisites: [],
@@ -420,7 +420,7 @@ export const computationCourses: Course[] = [
     color: 'bg-holistic'
   },
   {
-    id: '_FormacionIntegral2',
+    id: '_FormacionIntegral4',
     name: 'Formación Integral de Especialidad',
     credits: 3,
     prerequisites: [],
