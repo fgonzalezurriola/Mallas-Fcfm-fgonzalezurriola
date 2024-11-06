@@ -222,7 +222,7 @@ export const astronomyCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'AS3021',
+    id: 'AS3201',
     name: 'Astronomía Experimental',
     credits: 6,
     prerequisites: ['MA2001','FI2002'],
@@ -280,7 +280,7 @@ export const astronomyCourses: Course[] = [
   },
   // Semestre VII
   {
-    id: 'F4001',
+    id: 'FI4001',
     name: 'Mecánica Cuántica',
     credits: 6,
     prerequisites: ['FI3002', 'FI3102', 'FI3111'],
@@ -325,14 +325,14 @@ export const astronomyCourses: Course[] = [
     credits: 7,
     prerequisites: ['AS3101, AS3201'],
     semester: 7,
-    color: 'bg-elective'
+    color: 'bg-thesis'
   },
   // Semestre VIII
   {
-    id: 'F4104',
+    id: 'FI4104',
     name: 'Mecánica Estadística',
     credits: 6,
-    prerequisites: ['F4001'],
+    prerequisites: ['FI4001'],
     semester: 8,
     color: 'bg-common'
   },
