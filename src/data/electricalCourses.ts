@@ -241,7 +241,7 @@ export const electricalCourses: Course[] = [
 },
 {
   id: 'EL3202',
-  name: 'Circuitos Eléctricos Análogos',
+  name: 'Circuitos Eléctricos Análogicos',
   credits: 6,
   prerequisites: ['EL3101'],
   semester: 6,
@@ -324,7 +324,7 @@ export const electricalCourses: Course[] = [
   id: 'EL4115',
   name: 'Práctica Profesional I',
   credits: 7,
-  prerequisites: ['EL3101', 'EL3102', 'EL3105'],
+  prerequisites: ['EL3101', 'EL3102', 'EL3105', 'EL4110'],
   semester: 7,
   color: 'bg-internship'
 },
@@ -357,7 +357,7 @@ export const electricalCourses: Course[] = [
   id: 'EL4204',
   name: 'Formulación y Evaluación de Proyectos',
   credits: 6,
-  prerequisites: ['EL4204'],
+  prerequisites: ['EL4115'],
   semester: 8,
   color: 'bg-common'
 },
@@ -382,7 +382,7 @@ export const electricalCourses: Course[] = [
   id: 'EL6101',
   name: 'Taller de Proyectos Tecnológicos',
   credits: 12,
-  prerequisites: ['EL4203'],
+  prerequisites: ['EL4203', 'EL4204', 'EL4102', 'EL4103', 'EL4105', 'EL4106', 'EL4107', 'EL4108', '_Nucleo1', '_Nucleo2'],
   semester: 9,
   color: 'bg-common'
 },
