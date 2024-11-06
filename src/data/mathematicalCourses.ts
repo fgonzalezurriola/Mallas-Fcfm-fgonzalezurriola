@@ -488,7 +488,7 @@ export const mathematicalCourses: Course[] = [
     id: 'MA5903',
     name: 'Práctica Profesional III',
     credits: 7,
-    prerequisites: ['MA5902 (Req. MA4402 o MA4703)', 'MA5307'],
+    prerequisites: ['MA5902', 'MA4703'],
     semester: 11,
     color: 'bg-english'
   }

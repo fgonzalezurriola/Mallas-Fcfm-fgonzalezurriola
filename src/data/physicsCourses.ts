@@ -281,7 +281,7 @@ export const physicsCourses: Course[] = [
   },
   // Semestre VII
   {
-    id: 'F4001',
+    id: 'FI4001',
     name: 'Mecánica Cuántica',
     credits: 9,
     prerequisites: ['FI3002', 'FI3102', 'FI3111'],
@@ -289,7 +289,7 @@ export const physicsCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'F4012',
+    id: 'FI4012',
     name: 'Introducción a la Investigación I',
     credits: 6,
     prerequisites: ['FI3104', 'FI3105'],
@@ -338,7 +338,7 @@ export const physicsCourses: Course[] = [
     color: 'bg-common'
   },
   {
-    id: 'F4104',
+    id: 'FI4104',
     name: 'Mecánica Estadística',
     credits: 9,
     prerequisites: ['F4001'],
