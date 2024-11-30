@@ -107,7 +107,7 @@ const CurriculumGrid: React.FC = () => {
 
   const isPrerequisite = useCallback(
     (courseId: string): boolean => {
-      if (!hoveredCourseId && selectedCourseIds.size === 0) return false;
+      if (!hoveredCourseId === true) return false;
       if (hoveredCourseId) {
         return getPrerequisiteIds(hoveredCourseId).includes(courseId);
       }
@@ -131,6 +131,7 @@ const CurriculumGrid: React.FC = () => {
   };
 
   const handleCourseRightClick = (courseId: string) => {
+    setHoveredCourseId(null)
     setBlackCourseIds(prev => {
       const newBlackCourses = new Set(prev);
       if (prev.has(courseId)) {
@@ -156,13 +157,13 @@ const CurriculumGrid: React.FC = () => {
   return (
     <div className="p-0 min-h-screen bg-gray-50">
       <BackButton />
-      <div className="relative flex items-center justify-between mb-3 pt-3">
-        <h1 className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
+      <div className="relative flex items-center justify-center mb-3 pt-3">
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
           Malla {curriculumName}
         </h1>
-        <div className="flex items-center gap-4 ml-auto">
+        <div className="fixed inset-x-0 bottom-4 flex items-center justify-center gap-4 mx-auto z-index">
           <PiMouseLeftClickFill size={16}/>
-          <span className="text-xs">Marca Temporal</span>
+          <span className="text-xs pointer-events-none">Marca Temporal</span>
           <PiMouseRightClickFill size={16}/>
           <span className="text-xs mr-16">Marca <strong>Completado</strong></span>
         </div>
@@ -175,7 +176,7 @@ const CurriculumGrid: React.FC = () => {
         
         <div
           ref={containerRef}
-          className="flex gap-4 overflow-x-scroll scrollbar-hidden pb-6"
+          className="flex gap-4 overflow-x-auto scrollbar-hidden pb-6 sm:pb-8 md:pb-10"
           style={{ scrollBehavior: 'smooth' }}
         >
           {semesters.map((semester) => (
