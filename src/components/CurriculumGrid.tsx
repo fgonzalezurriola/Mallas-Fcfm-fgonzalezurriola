@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Course from './Course';
 import BackButton from './BackButton';
@@ -20,6 +20,7 @@ import { PiMouseLeftClickFill, PiMouseRightClickFill } from "react-icons/pi";
 import { placeholderCourses } from '../data/placeHolderCourses.ts';
 import { toRoman } from '../utils/romanNumerals';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
 
 const TOTAL_SEMESTERS = 11;
 
@@ -74,10 +75,29 @@ const CurriculumGrid: React.FC = () => {
     courses = placeholderCourses;
   }
 
-
-  const [selectedCourseIds, setSelectedCourseIds] = useState<Set<string>>(new Set());
-  const [blackCourseIds, setBlackCourseIds] = useState<Set<string>>(new Set());
+  
+  const [selectedCourseIds, setSelectedCourseIds] = useState<Set<string>>(() => {
+    const saved = localStorage.getItem('selectedCourseIds');
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
+  
+  const [blackCourseIds, setBlackCourseIds] = useState<Set<string>>(() => {
+    const saved = localStorage.getItem('blackCourseIds');
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
   const [hoveredCourseId, setHoveredCourseId] = useState<string | null>(null);
+
+  useEffect(() => {
+    localStorage.setItem('selectedCourseIds', JSON.stringify(Array.from(selectedCourseIds)));
+  }, [selectedCourseIds]);
+
+  useEffect(() => {
+    localStorage.setItem('blackCourseIds', JSON.stringify(Array.from(blackCourseIds)));
+  }, [blackCourseIds]);
+
+  // const [selectedCourseIds, setSelectedCourseIds] = useState<Set<string>>(new Set());
+  // const [blackCourseIds, setBlackCourseIds] = useState<Set<string>>(new Set());
+  // const [hoveredCourseId, setHoveredCourseId] = useState<string | null>(null);
 
   const containerRef = useRef<HTMLDivElement>(null);
 
