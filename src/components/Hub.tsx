@@ -1,6 +1,6 @@
-import React from 'react';
-import MallasCard from './MallasCard';
-import { mallas } from '../data/mallas';
+import React from "react";
+import MallasCard from "./MallasCard";
+import { mallas } from "../data/mallas";
 
 const CurriculumHub: React.FC = () => {
   return (

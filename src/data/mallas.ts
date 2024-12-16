@@ -1,19 +1,19 @@
-import { Mallas } from '../types';
+import { Mallas } from "../types";
 
 export const mallas: Mallas[] = [
   {
-    id: 'computacion',
-    name: 'Ingeniería Civil en Computación',
-    description: '',
-    imageUrl: '/logo_dcc.png',
-    route: '/malla/computacion'
+    id: "computacion",
+    name: "Ingeniería Civil en Computación",
+    description: "",
+    imageUrl: "/logo_dcc.png",
+    route: "/malla/computacion",
   },
   {
-    id: 'electrica',
-    name: 'Ingeniería Civil Eléctrica',
-    description: '',
-    imageUrl: '/logo_die.png',
-    route: '/malla/electrica'
+    id: "electrica",
+    name: "Ingeniería Civil Eléctrica",
+    description: "",
+    imageUrl: "/logo_die.png",
+    route: "/malla/electrica",
   },
   // {
   //   id: 'industrial',
@@ -23,11 +23,11 @@ export const mallas: Mallas[] = [
   //   route: '/malla/industrial'
   // },
   {
-    id: 'matematica',
-    name: 'Ingeniería Civil Matemática',
-    description: '',
-    imageUrl: '/logo_dim.png',
-    route: '/malla/matematica'
+    id: "matematica",
+    name: "Ingeniería Civil Matemática",
+    description: "",
+    imageUrl: "/logo_dim.png",
+    route: "/malla/matematica",
   },
   // {
   //   id: 'mecanica',
@@ -37,18 +37,18 @@ export const mallas: Mallas[] = [
   //   route: '/malla/mecanica'
   // },
   {
-    id: 'fisica',
-    name: 'Licenciatura en Ciencias mención Física',
-    description: '',
-    imageUrl: '/logo_dfi.png',
-    route: '/malla/fisica'
+    id: "fisica",
+    name: "Licenciatura en Ciencias mención Física",
+    description: "",
+    imageUrl: "/logo_dfi.png",
+    route: "/malla/fisica",
   },
   {
-    id: 'astronomia',
-    name: 'Licenciatura en Ciencias mención Astronomía',
-    description: '',
-    imageUrl: '/logo_das.png',
-    route: '/malla/astronomia'
+    id: "astronomia",
+    name: "Licenciatura en Ciencias mención Astronomía",
+    description: "",
+    imageUrl: "/logo_das.png",
+    route: "/malla/astronomia",
   },
   // {
   //   id: 'geologia',

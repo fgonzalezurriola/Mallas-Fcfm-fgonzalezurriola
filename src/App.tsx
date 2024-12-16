@@ -1,7 +1,6 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
-import Hub from './components/Hub';
-import CurriculumGrid from './components/CurriculumGrid';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Hub from "./components/Hub";
+import CurriculumGrid from "./components/CurriculumGrid";
 
 function App() {
   return (

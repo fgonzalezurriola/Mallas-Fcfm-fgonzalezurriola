@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { RiArrowGoBackFill } from "react-icons/ri";
 
 const BackButton: React.FC = () => {
@@ -7,7 +7,7 @@ const BackButton: React.FC = () => {
 
   return (
     <button
-      onClick={() => navigate('/')}
+      onClick={() => navigate("/")}
       className="fixed top-1.5 left-1.5 bg-gray-300 p-3 rounded-full shadow-lg 
                  hover:shadow-xl transition-all duration-300 ease-in-out
                  hover:bg-gray-400 hover:-translate-x-1
