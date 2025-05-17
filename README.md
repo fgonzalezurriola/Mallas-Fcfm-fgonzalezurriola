@@ -58,7 +58,6 @@ El proyecto estará disponible en tu navegador en `http://localhost:5173`.
 
 ## 🌐 Despliegue
 
-Actualmente el proyecto está desplegado en Vercel, puedes acceder a él: [malla curricular de FCFM](https://mallas-fcfm-fgonzalezurriola.vercel.app/).
+Actualmente el proyecto está desplegado en Netlify, puedes acceder a él: [malla curricular de FCFM](https://mallas-fcfm-fgonzalezurriola.netlify.app/).
 
 ---
-
