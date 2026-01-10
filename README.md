@@ -11,8 +11,8 @@ Actualmente el proyecto está desplegado en Netlify, puedes acceder a él: [mall
 ```bash
 git clone https://github.com/fgonzalezurriola/Mallas-Fcfm-fgonzalezurriola/
 cd Mallas-Fcfm-fgonzalezurriola
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 El proyecto estará disponible en `http://localhost:5173`.
